@@ -351,7 +351,8 @@ header .wrapper {
 
 .hero-wrapper {
     padding: 0 2rem 0.1rem 2rem !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
+    max-width: 1200px;
 }
 
 .hero-background {
@@ -522,7 +523,8 @@ header .wrapper {
 
     .hero-wrapper {
         padding: 0 1rem 0.05rem 1rem !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
+        max-width: 1200px;
     }
 
     .hero-text .greeting {
@@ -583,7 +585,8 @@ header .wrapper {
 
     .hero-wrapper {
         padding: 0 1rem 0.02rem 1rem !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
+        max-width: 1200px;
     }
 
     .hero-text .greeting {
@@ -709,6 +712,8 @@ header .wrapper {
     text-align: center;
     flex: 1;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .name-section {
@@ -758,6 +763,9 @@ header .wrapper {
     margin-bottom: 2rem;
     font-weight: 500;
     opacity: 0.9;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /****************** PROJECT PAGE SPECIFIC STYLES ****************/
@@ -1486,6 +1494,10 @@ a:hover {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
 .about-download {
@@ -1528,10 +1540,10 @@ a:hover {
 
 @media (min-width: 768px) {
     .about-content {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        gap: 4rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
     }
 
     .about-image {
@@ -2970,10 +2982,13 @@ html {
     .about-content {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .about-image {
         margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about-social-links {
