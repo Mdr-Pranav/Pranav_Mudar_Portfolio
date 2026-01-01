@@ -1985,18 +1985,64 @@ a:hover {
     transform: translateY(30px);
 }
 
+/* Subtle shimmer effect on skill cards */
 .skill-category::before {
-    display: none;
-}
-
-.skill-category:hover {
-    border-color: var(--accent);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
-    transform: translateY(-5px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.08), transparent);
+    transition: left 0.8s ease;
 }
 
 .skill-category:hover::before {
     left: 100%;
+}
+
+/* Floating border glow animation */
+.skill-category::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    border-radius: 14px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.skill-category:hover::after {
+    opacity: 1;
+    animation: borderRotate 3s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% {
+        background: linear-gradient(0deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    }
+    25% {
+        background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    }
+    50% {
+        background: linear-gradient(180deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    }
+    75% {
+        background: linear-gradient(270deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    }
+    100% {
+        background: linear-gradient(360deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    }
+}
+
+.skill-category:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 30px rgba(52, 152, 219, 0.25);
+    transform: translateY(-5px);
 }
 
 .skill-category h3 {
@@ -2007,6 +2053,31 @@ a:hover {
     border-bottom: 2px solid var(--accent);
     position: relative;
     transition: all 0.3s ease;
+}
+
+/* Icon bounce animation on hover */
+.skill-category h3 i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover h3 i {
+    animation: iconBounce 0.6s ease;
+}
+
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
 }
 
 .skill-category:hover h3 {
@@ -2045,12 +2116,24 @@ a:hover {
     position: relative;
     padding-left: 1.5rem;
     color: var(--text);
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Icon glow on skill items */
+.skill-list li i {
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .skill-list li:hover {
-    transform: translateX(5px);
+    transform: translateX(8px);
     color: #fff;
+}
+
+.skill-list li:hover i {
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+    transform: scale(1.1);
 }
 
 /* Skills entrance animations */
@@ -2267,13 +2350,52 @@ a:hover {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ease;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+/* Subtle gradient border animation */
+.certification-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(79, 195, 247, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.certification-item:hover::before {
+    left: 100%;
+}
+
+/* Glowing corner accents */
+.certification-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: 
+        radial-gradient(circle at 0% 0%, rgba(79, 195, 247, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 100% 100%, rgba(79, 195, 247, 0.15) 0%, transparent 25%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.certification-item:hover::after {
+    opacity: 1;
 }
 
 .cert-logo {
@@ -2282,22 +2404,38 @@ a:hover {
     object-fit: contain;
     margin-bottom: 1rem;
     filter: grayscale(100%) brightness(0.8);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .certification-item:hover .cert-logo {
     filter: grayscale(0%) brightness(1);
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(5deg);
 }
 
 .certification-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 35px rgba(79, 195, 247, 0.2);
 }
 
 .company-name {
-    color: #4fc3f7; /* Light blue color */
+    color: #4fc3f7;
     font-weight: 500;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.certification-item:hover .company-name {
+    text-shadow: 0 0 10px rgba(79, 195, 247, 0.5);
+}
+
+/* Certificate title hover effect */
+.certification-item h3 {
+    transition: all 0.3s ease;
+}
+
+.certification-item:hover h3 {
+    color: var(--accent);
 }
 
 /* Remove the View Certificate button styles */
@@ -2329,7 +2467,7 @@ a:hover {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--accent), #2980b9);
     color: white;
     width: 30px;
     height: 30px;
@@ -2338,6 +2476,16 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+    transition: all 0.4s ease;
+    z-index: 5;
+}
+
+.certification-item:hover .cert-number {
+    transform: scale(1.15) rotate(-10deg);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.5);
+    background: linear-gradient(135deg, #00e676, #00c853);
 }
 
 .certification-item h3 {
@@ -3314,24 +3462,123 @@ html {
 #contact {
     padding: 4rem 0;
     background: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle animated background particles */
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(52, 152, 219, 0.05) 0%, transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(52, 152, 219, 0.05) 0%, transparent 25%);
+    animation: contactBgPulse 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes contactBgPulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
 #contact h2 {
     text-align: center;
     margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Animated paper plane icon in heading */
+#contact h2 i {
+    display: inline-block;
+    animation: planeFloat 3s ease-in-out infinite;
+}
+
+@keyframes planeFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-3px) rotate(-5deg);
+    }
+    75% {
+        transform: translateY(3px) rotate(5deg);
+    }
 }
 
 .contact-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-info-section, .contact-form-section {
     background: var(--card-bg);
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Shimmer effect on cards */
+.contact-info-section::before,
+.contact-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.08), transparent);
+    transition: left 0.8s ease;
+}
+
+.contact-info-section:hover::before,
+.contact-form-section:hover::before {
+    left: 100%;
+}
+
+.contact-info-section:hover,
+.contact-form-section:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Get in Touch title animation */
+.contact-info-section h3 {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.contact-info-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.4s ease;
+}
+
+.contact-info-section:hover h3::after {
+    width: 100%;
 }
 
 .contact-details {
@@ -3341,15 +3588,67 @@ html {
 .contact-detail-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover background effect on detail items */
+.contact-detail-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(52, 152, 219, 0.1), transparent);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-detail-item:hover::before {
+    opacity: 1;
+}
+
+.contact-detail-item:hover {
+    transform: translateX(8px);
 }
 
 .contact-detail-item i {
     color: var(--accent);
-    font-size: 1.2rem;
-    width: 30px;
-    text-align: center;
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 50%;
     margin-right: 1rem;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-detail-item:hover i {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.contact-detail-item p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-detail-item:hover p {
+    color: white;
 }
 
 .contact-form {
@@ -3362,56 +3661,123 @@ html {
     position: relative;
 }
 
+/* Animated underline for inputs */
+.form-group::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), #00e676);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.form-group:focus-within::after {
+    width: 100%;
+}
+
 .contact-form input, 
 .contact-form textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 14px 16px;
     border: 1px solid var(--border-color);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.03);
     color: var(--text);
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .contact-form input:focus, 
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+    background-color: rgba(52, 152, 219, 0.05);
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Placeholder animation */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+    opacity: 0.5;
+    transform: translateX(10px);
 }
 
 .send-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--accent), #2980b9);
     color: white;
-    padding: 12px 24px;
-    border-radius: 4px;
+    padding: 14px 28px;
+    border-radius: 8px;
     font-weight: 600;
     letter-spacing: 1px;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     border: none;
     cursor: pointer;
     align-self: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button shine effect */
+.send-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.send-button:hover::before {
+    left: 100%;
 }
 
 .send-button i {
-    margin-left: 8px;
-    transition: transform 0.3s ease;
+    margin-left: 10px;
+    transition: all 0.4s ease;
 }
 
 .send-button:hover {
-    background: #2779bd;
-    color: #000000;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2980b9, #00c853);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
 }
 
 .send-button:hover i {
-    transform: translateX(5px);
+    transform: translateX(5px) rotate(-15deg);
+    animation: planeFly 0.6s ease;
+}
+
+@keyframes planeFly {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(8px) translateY(-5px) rotate(-20deg);
+    }
+    100% {
+        transform: translateX(5px) rotate(-15deg);
+    }
+}
+
+/* Active/click effect */
+.send-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
 .form-status {
@@ -3419,14 +3785,34 @@ html {
     text-align: center;
     font-weight: 500;
     transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
 }
 
 .form-status.success {
     color: var(--success);
+    background: rgba(46, 204, 113, 0.1);
+    animation: statusPop 0.4s ease;
 }
 
 .form-status.error {
     color: var(--highlight);
+    background: rgba(231, 76, 60, 0.1);
+    animation: statusPop 0.4s ease;
+}
+
+@keyframes statusPop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @media only screen and (min-width: 768px) {
