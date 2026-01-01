@@ -2586,6 +2586,439 @@ a:hover {
     margin-bottom: 0;
 }
 
+/* In Progress Experience Item - Pure Storage */
+.experience-in-progress {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background: 
+        linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+        linear-gradient(90deg, #fe6b8b, #ff8e53, #4fc3f7, #00e676, #fe6b8b) border-box;
+    background-size: 100% 100%, 300% 100%;
+    animation: borderFlow 4s linear infinite, cardPulse 3s ease-in-out infinite;
+}
+
+@keyframes borderFlow {
+    0% {
+        background-position: 0% 0%, 0% 0%;
+    }
+    100% {
+        background-position: 0% 0%, 300% 0%;
+    }
+}
+
+@keyframes cardPulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(254, 107, 139, 0.2);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(79, 195, 247, 0.3);
+    }
+}
+
+/* In Progress Badge */
+.in-progress-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(0, 230, 118, 0.15), rgba(79, 195, 247, 0.15));
+    border: 1px solid rgba(0, 230, 118, 0.4);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background: #00e676;
+    border-radius: 50%;
+    position: relative;
+    animation: pulseDot 1.5s ease-in-out infinite;
+}
+
+.pulse-dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #00e676;
+    border-radius: 50%;
+    animation: pulseRing 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2.5);
+        opacity: 0;
+    }
+}
+
+.badge-text {
+    color: #00e676;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Progress Loader Bar */
+.progress-loader {
+    position: relative;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 1.5rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(90deg, #fe6b8b, #ff8e53, #4fc3f7);
+    border-radius: 2px;
+    animation: progressMove 2s ease-in-out infinite;
+}
+
+@keyframes progressMove {
+    0% {
+        left: -30%;
+        width: 30%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        left: 100%;
+        width: 30%;
+    }
+}
+
+.progress-glow {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 8px;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, rgba(79, 195, 247, 0.6), transparent);
+    border-radius: 4px;
+    filter: blur(4px);
+    animation: progressMove 2s ease-in-out infinite;
+}
+
+/* Loading Text with Typing Dots */
+.loading-text {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.typing-dots {
+    display: inline-flex;
+}
+
+.typing-dots span {
+    animation: typingDot 1.4s infinite;
+    opacity: 0;
+}
+
+.typing-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingDot {
+    0%, 60%, 100% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+
+/* Override hover effects for in-progress item */
+.experience-in-progress:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(79, 195, 247, 0.3);
+}
+
+.experience-in-progress:hover .progress-bar,
+.experience-in-progress:hover .progress-glow {
+    animation-duration: 1.2s;
+}
+
+/* Mobile responsive for in-progress badge */
+@media only screen and (max-width: 768px) {
+    .in-progress-badge {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .badge-text {
+        font-size: 0.65rem;
+    }
+    
+    .pulse-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .loading-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .in-progress-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 1rem;
+        width: fit-content;
+    }
+}
+
+/* Completed Experience Item Styles */
+.experience-completed {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #00c853;
+    box-shadow: 0 0 20px rgba(0, 200, 83, 0.3), 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: completedGlow 3s ease-in-out infinite;
+}
+
+@keyframes completedGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 200, 83, 0.3), 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-color: #00c853;
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(0, 200, 83, 0.5), 0 4px 20px rgba(0, 0, 0, 0.3);
+        border-color: #00e676;
+    }
+}
+
+/* Completed Badge */
+.completed-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(0, 200, 83, 0.15), rgba(0, 230, 118, 0.15));
+    border: 1px solid rgba(0, 200, 83, 0.5);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.checkmark-circle {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #00c853, #00e676);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: checkPop 2s ease-in-out infinite;
+}
+
+.checkmark-circle i {
+    color: #1a1a1a;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+@keyframes checkPop {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* Checkmark draw animation on hover */
+.experience-completed:hover .checkmark-circle {
+    animation: checkSpin 0.6s ease-out;
+}
+
+@keyframes checkSpin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.completed-badge .badge-text {
+    color: #00e676;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Completed Progress Bar - Full */
+.completed-bar {
+    position: relative;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 1.5rem;
+    overflow: hidden;
+}
+
+.completed-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #00c853, #00e676, #69f0ae);
+    border-radius: 2px;
+    animation: completedPulse 3s ease-in-out infinite;
+}
+
+@keyframes completedPulse {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.completed-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shineMove 3s ease-in-out infinite;
+}
+
+@keyframes shineMove {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+/* Hover effects for completed items */
+.experience-completed:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 45px rgba(0, 200, 83, 0.5), 0 12px 40px rgba(0, 0, 0, 0.3);
+    border-color: #69f0ae;
+}
+
+.experience-completed:hover .completed-shine {
+    animation-duration: 1.5s;
+}
+
+/* Staggered particle/star effect on completed items */
+.experience-completed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 200, 83, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 80% 20%, rgba(0, 230, 118, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 40% 40%, rgba(105, 240, 174, 0.08) 0%, transparent 15%);
+    pointer-events: none;
+    animation: starTwinkle 4s ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Mobile responsive for completed badge */
+@media only screen and (max-width: 768px) {
+    .completed-badge {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .completed-badge .badge-text {
+        font-size: 0.65rem;
+    }
+    
+    .checkmark-circle {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .checkmark-circle i {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .completed-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 1rem;
+        width: fit-content;
+    }
+}
+
 /***************** About & Contact Section *****************/
 #about-contact {
     padding: 4rem 0;
