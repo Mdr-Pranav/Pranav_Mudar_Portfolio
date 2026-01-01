@@ -2177,16 +2177,11 @@ a:hover {
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 2rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 0.6s ease forwards;
-    opacity: 0;
-    transform: translateY(30px);
 }
 
 .education-item::before {
@@ -2200,52 +2195,66 @@ a:hover {
     transition: left 0.6s ease;
 }
 
-.education-item:hover {
-    border-color: var(--accent);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
-    transform: translateY(-5px);
-}
-
 .education-item:hover::before {
     left: 100%;
 }
 
 .education-item:last-child {
-    border-bottom: none;
     margin-bottom: 0;
-    padding-bottom: 2rem;
 }
 
-.education-item:nth-child(1) {
-    animation-delay: 0.1s;
+/* Education Header - Similar to Experience */
+.education-header {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.education-item:nth-child(2) {
-    animation-delay: 0.2s;
+.institution-logo {
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+    background: white;
+    padding: 8px;
+    flex-shrink: 0;
+    display: block;
+    transition: all 0.3s ease;
 }
 
-.education-item:nth-child(3) {
-    animation-delay: 0.3s;
+.education-item:hover .institution-logo {
+    transform: scale(1.05);
 }
 
-.education-item:nth-child(4) {
-    animation-delay: 0.4s;
+.education-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.25rem;
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.education-title h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: var(--heading);
 }
 
-.education-details h3 {
-    margin-bottom: 0.5rem;
+.education-institution {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.4;
 }
 
-.education-date, .education-degree, .education-gpa, .education-percentage, .education-achievements {
-    margin-bottom: 0.5rem;
-    color: var(--dark-gray);
+.education-details {
+    padding-left: 0;
+    margin-top: 1rem;
 }
 
 .education-date {
@@ -2253,17 +2262,20 @@ a:hover {
     color: var(--accent);
     font-weight: 500;
     display: inline-block;
+    width: fit-content;
     padding: 0.3rem 0.8rem;
     background: rgba(52, 152, 219, 0.1);
     border-radius: 15px;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.5;
 }
 
 .education-degree {
-    font-weight: 600;
-    color: var(--heading);
-    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -2271,9 +2283,9 @@ a:hover {
     display: inline-block;
     background: var(--accent);
     color: white;
-    padding: 0.2rem 0.6rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 10px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -2284,12 +2296,130 @@ a:hover {
     padding: 1rem;
     border-radius: 8px;
     border-left: 4px solid var(--accent);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
-.education-achievements::before {
-    content: '🏆';
-    margin-right: 0.5rem;
+/* Ongoing Education - Subtle Orange Glow (PES University) */
+.education-ongoing {
+    border: 1px solid rgba(255, 152, 0, 0.4);
+    box-shadow: 0 0 8px rgba(255, 152, 0, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: ongoingGlow 4s ease-in-out infinite;
+}
+
+@keyframes ongoingGlow {
+    0%, 100% {
+        box-shadow: 0 0 8px rgba(255, 152, 0, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-color: rgba(255, 152, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(255, 152, 0, 0.15), 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-color: rgba(255, 152, 0, 0.5);
+    }
+}
+
+.education-ongoing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.2), 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 152, 0, 0.6);
+}
+
+.education-ongoing .education-date {
+    background: rgba(255, 152, 0, 0.1);
+    color: #ffb74d;
+}
+
+.education-ongoing .education-gpa {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+}
+
+.education-ongoing:hover .education-gpa {
+    color: white;
+}
+
+/* Completed Education - Subtle Green Glow */
+.education-done {
+    border: 1px solid rgba(0, 200, 83, 0.4);
+    box-shadow: 0 0 8px rgba(0, 200, 83, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: educationDoneGlow 4s ease-in-out infinite;
+}
+
+@keyframes educationDoneGlow {
+    0%, 100% {
+        box-shadow: 0 0 8px rgba(0, 200, 83, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-color: rgba(0, 200, 83, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(0, 200, 83, 0.15), 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-color: rgba(0, 200, 83, 0.5);
+    }
+}
+
+.education-done:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 200, 83, 0.2), 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 200, 83, 0.6);
+}
+
+.education-done .education-date {
+    background: rgba(0, 200, 83, 0.1);
+    color: #00e676;
+}
+
+.education-done .education-percentage {
+    background: linear-gradient(135deg, #00c853, #00e676);
+    color: white;
+}
+
+.education-done:hover .education-percentage {
+    color: white;
+}
+
+/* Mobile responsive for education */
+@media only screen and (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .institution-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .education-title {
+        align-items: center;
+    }
+    
+    .education-title h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .education-institution {
+        font-size: 1rem;
+    }
+    
+    .education-details {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .institution-logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .education-title h3 {
+        font-size: 1.1rem;
+    }
+    
+    .education-institution {
+        font-size: 0.9rem;
+    }
 }
 
 /* Certifications Section */
