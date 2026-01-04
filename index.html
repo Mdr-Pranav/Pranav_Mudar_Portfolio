@@ -107,7 +107,34 @@
     })(document, 'script');
   </script> -->
 
-<body>
+<body class="loading">
+    
+    <!-- Epic Page Load Animation -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-background"></div>
+        <div class="loader-lines">
+            <div class="loader-line line-1"></div>
+            <div class="loader-line line-2"></div>
+            <div class="loader-line line-3"></div>
+            <div class="loader-line line-4"></div>
+            <div class="loader-line line-5"></div>
+        </div>
+        <div class="loader-center">
+            <div class="loader-ring"></div>
+            <div class="loader-ring ring-2"></div>
+            <div class="loader-ring ring-3"></div>
+            <div class="loader-logo">P</div>
+        </div>
+        <div class="loader-reveal">
+            <div class="reveal-left"></div>
+            <div class="reveal-right"></div>
+        </div>
+        <div class="loader-particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
 	
     <!-- ------------------------------------------------------
     The site is designed to be mobile first. The wrapper elements
@@ -193,11 +220,38 @@
         <div class="wrapper">
             <h2><i class="fas fa-briefcase"></i> Experience</h2>
             
-            <div class="experience-item" data-aos="fade-up" data-aos-duration="800">
+            <div class="experience-item experience-in-progress" data-aos="fade-up" data-aos-duration="800">
+                <div class="in-progress-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">In Progress</span>
+                </div>
                 <div class="experience-header">
-                    <img src="Images/isro-logo.png" alt="ISRO Logo" class="company-logo">
+                    <img src="Images/Experience/Pure_Storage_Logo.png" alt="Pure Storage Logo" class="company-logo">
                     <div class="experience-title">
-                        <h3>AIML- Intern, ISRO (ISTRAC Centre), Bangalore, India</h3>
+                        <h3>Software Engineering Intern</h3>
+                        <h4 class="experience-company">Pure Storage</h4>
+                        <p class="experience-date"><i class="far fa-calendar-alt"></i> Jan 2026 – Present</p>
+                    </div>
+                </div>
+                <div class="progress-loader">
+                    <div class="progress-bar"></div>
+                    <div class="progress-glow"></div>
+                </div>
+                <p class="loading-text">Currently building amazing things<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span></p>
+            </div>
+
+            <div class="experience-item experience-completed" data-aos="fade-up" data-aos-duration="800">
+                <div class="completed-badge">
+                    <span class="checkmark-circle">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span class="badge-text">Completed</span>
+                </div>
+                <div class="experience-header">
+                    <img src="Images/Experience/isro-logo.png" alt="ISRO Logo" class="company-logo">
+                    <div class="experience-title">
+                        <h3>AIML - Intern</h3>
+                        <h4 class="experience-company">ISRO (ISTRAC Centre), Bangalore</h4>
                         <p class="experience-date"><i class="far fa-calendar-alt"></i> Jun 2025 – Aug 2025</p>
                     </div>
                 </div>
@@ -207,13 +261,24 @@
                     <li><i class="fas fa-eye"></i> Applied YOLOv8 for visual anomaly localization by converting time-series data into plots, enabling feature-level diagnostics with bounding boxes.</li>
                     <li><i class="fas fa-desktop"></i> Built a web-based dashboard (Flask + JS) for real-time upload, analysis, and visualization of anomalies in satellite health monitoring.</li>
                 </ul>
+                <div class="completed-bar">
+                    <div class="completed-fill"></div>
+                    <div class="completed-shine"></div>
+                </div>
             </div>
 
-            <div class="experience-item" data-aos="fade-up" data-aos-duration="800">
+            <div class="experience-item experience-completed" data-aos="fade-up" data-aos-duration="800">
+                <div class="completed-badge">
+                    <span class="checkmark-circle">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span class="badge-text">Completed</span>
+                </div>
                 <div class="experience-header">
-                    <img src="Images/pes-logo.png" alt="PES University Logo" class="company-logo">
+                    <img src="Images/Experience/pes-logo.png" alt="PES University Logo" class="company-logo">
                     <div class="experience-title">
-                        <h3>University AIML Club Coordinator, PES University, Bangalore, India</h3>
+                        <h3>University AIML Club Coordinator</h3>
+                        <h4 class="experience-company">PES University, Bangalore</h4>
                         <p class="experience-date"><i class="far fa-calendar-alt"></i> Jan 2023 – Dec 2024</p>
                     </div>
                 </div>
@@ -221,6 +286,10 @@
                     <li><i class="fas fa-users"></i> Led the organization's design domain and managed 15 club meetings, workshops, hackathons, and events focused on AI and ML technologies, engaging an average of 30 attendees per session.</li>
                     <li><i class="fas fa-project-diagram"></i> Collaborated on five projects and research endeavors applying AI and ML techniques to real-world challenges, resulting in the development of solutions that garnered recognition within the club community.</li>
                 </ul>
+                <div class="completed-bar">
+                    <div class="completed-fill"></div>
+                    <div class="completed-shine"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -358,7 +427,7 @@
                     <h3><i class="fas fa-brain"></i> Machine Learning Libraries</h3>
                     <ul class="skill-list">
                         <li><i class="fas fa-cogs"></i> Scikit-learn</li>
-                        <li><i class="fab fa-tensorflow"></i> TensorFlow</li>
+                        <li><i class="fas fa-project-diagram"></i> TensorFlow</li>
                         <li><i class="fas fa-layer-group"></i> Keras</li>
                         <li><i class="fas fa-chart-bar"></i> Statistics</li>
                         <li><i class="fas fa-robot"></i> Basics of Supervised and Unsupervised Learning</li>
@@ -440,29 +509,47 @@
         <div class="wrapper">
             <h2><i class="fas fa-graduation-cap"></i> Education</h2>
             
-            <div class="education-item" data-aos="fade-up" data-aos-duration="800">
+            <div class="education-item education-ongoing" data-aos="fade-up" data-aos-duration="800">
+                <div class="education-header">
+                    <img src="Images/Education/PES_Logo.jpg" alt="PES University Logo" class="institution-logo">
+                    <div class="education-title">
+                        <h3>PES University</h3>
+                        <h4 class="education-institution">Bangalore, India</h4>
+                        <p class="education-date"><i class="far fa-calendar-alt"></i> July 2022 - Present</p>
+                    </div>
+                </div>
                 <div class="education-details">
-                    <h3><i class="fas fa-university"></i> People Education Society (PES) University, Bangalore, India</h3>
-                    <p class="education-date"><i class="far fa-calendar-alt"></i> July 2022 - Present</p>
                     <p class="education-degree"><i class="fas fa-book"></i> Bachelors of Science, Computer Science and Engineering (Senior)</p>
-                    <p class="education-gpa"><i class="fas fa-star"></i> CGPA: 8.68/10</p>
+                    <p class="education-gpa"><i class="fas fa-star"></i> CGPA: 8.69/10</p>
                     <p class="education-achievements"><i class="fas fa-trophy"></i> Won 2 university-level hackathons</p>
                 </div>
             </div>
             
-            <div class="education-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="education-item education-done" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="education-header">
+                    <img src="Images/Education/Narayana_logo.avif" alt="Narayana Logo" class="institution-logo">
+                    <div class="education-title">
+                        <h3>Narayana Jr. College</h3>
+                        <h4 class="education-institution">Anantapur, India</h4>
+                        <p class="education-date"><i class="far fa-calendar-alt"></i> July 2020 - May 2022</p>
+                    </div>
+                </div>
                 <div class="education-details">
-                    <h3><i class="fas fa-school"></i> Narayana Jr. College, Anantapur, India</h3>
-                    <p class="education-date"><i class="far fa-calendar-alt"></i> July 2020 - May 2022</p>
                     <p class="education-degree"><i class="fas fa-atom"></i> Maths, Physics, Chemistry</p>
                     <p class="education-percentage"><i class="fas fa-chart-line"></i> Percentage: 84.6%</p>
                 </div>
             </div>
             
-            <div class="education-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div class="education-item education-done" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="education-header">
+                    <img src="Images/Education/Viswa Bharathi.png" alt="Vishwa Bharathi Logo" class="institution-logo">
+                    <div class="education-title">
+                        <h3>Vishwa Bharathi E.M. High School</h3>
+                        <h4 class="education-institution">Anantapur, India</h4>
+                        <p class="education-date"><i class="far fa-calendar-alt"></i> July 2015 – May 2020</p>
+                    </div>
+                </div>
                 <div class="education-details">
-                    <h3><i class="fas fa-school"></i> Vishwa Bharathi E.M. High School, Anantapur, India</h3>
-                    <p class="education-date"><i class="far fa-calendar-alt"></i> July 2015 – May 2020</p>
                     <p class="education-degree"><i class="fas fa-book"></i> High School</p>
                     <p class="education-percentage"><i class="fas fa-chart-line"></i> Percentage: 98.67%</p>
                 </div>
@@ -739,6 +826,42 @@
                 }
             });
         });
+
+        // Page Load Animation Controller
+        (function() {
+            const loader = document.getElementById('pageLoader');
+            const body = document.body;
+            
+            // Animation timing - total animation is ~2 seconds
+            const animationDuration = 2000;
+            
+            // When DOM is ready, start the reveal
+            function startReveal() {
+                // Small delay to ensure styles are applied
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        body.classList.remove('loading');
+                        body.classList.add('loaded');
+                        
+                        // Clean up loader after content reveal completes
+                        setTimeout(() => {
+                            loader.classList.add('hidden');
+                            // Remove loader from DOM after transition
+                            setTimeout(() => {
+                                loader.remove();
+                            }, 100);
+                        }, 800);
+                    }, animationDuration);
+                });
+            }
+            
+            // Start immediately if DOM already loaded
+            if (document.readyState === 'complete') {
+                startReveal();
+            } else {
+                window.addEventListener('load', startReveal);
+            }
+        })();
     </script>
 </body>
 </html>
