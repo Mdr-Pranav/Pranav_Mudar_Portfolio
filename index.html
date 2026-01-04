@@ -107,7 +107,34 @@
     })(document, 'script');
   </script> -->
 
-<body>
+<body class="loading">
+    
+    <!-- Epic Page Load Animation -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-background"></div>
+        <div class="loader-lines">
+            <div class="loader-line line-1"></div>
+            <div class="loader-line line-2"></div>
+            <div class="loader-line line-3"></div>
+            <div class="loader-line line-4"></div>
+            <div class="loader-line line-5"></div>
+        </div>
+        <div class="loader-center">
+            <div class="loader-ring"></div>
+            <div class="loader-ring ring-2"></div>
+            <div class="loader-ring ring-3"></div>
+            <div class="loader-logo">P</div>
+        </div>
+        <div class="loader-reveal">
+            <div class="reveal-left"></div>
+            <div class="reveal-right"></div>
+        </div>
+        <div class="loader-particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
 	
     <!-- ------------------------------------------------------
     The site is designed to be mobile first. The wrapper elements
@@ -799,6 +826,42 @@
                 }
             });
         });
+
+        // Page Load Animation Controller
+        (function() {
+            const loader = document.getElementById('pageLoader');
+            const body = document.body;
+            
+            // Animation timing - total animation is ~2 seconds
+            const animationDuration = 2000;
+            
+            // When DOM is ready, start the reveal
+            function startReveal() {
+                // Small delay to ensure styles are applied
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        body.classList.remove('loading');
+                        body.classList.add('loaded');
+                        
+                        // Clean up loader after content reveal completes
+                        setTimeout(() => {
+                            loader.classList.add('hidden');
+                            // Remove loader from DOM after transition
+                            setTimeout(() => {
+                                loader.remove();
+                            }, 100);
+                        }, 800);
+                    }, animationDuration);
+                });
+            }
+            
+            // Start immediately if DOM already loaded
+            if (document.readyState === 'complete') {
+                startReveal();
+            } else {
+                window.addEventListener('load', startReveal);
+            }
+        })();
     </script>
 </body>
 </html>
