@@ -224,57 +224,78 @@ header .wrapper {
     transform: scale(1.05);
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+/* Profile Modal - Bulletproof Styles */
+#profileModal.modal,
+#profileModal {
+    display: none !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    z-index: 999999 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.3s ease !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
 }
 
-.modal.active {
-    display: flex;
-    opacity: 1;
+#profileModal.modal.active,
+#profileModal.active {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
 }
 
-.modal img {
-    max-width: 90%;
-    max-height: 90vh;
-    border-radius: 50%;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 30px rgba(52, 152, 219, 0.9);
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: min(90vw, 90vh);
-    height: min(90vw, 90vh);
-    transform: scale(0.8);
-    transition: transform 0.3s ease;
+#profileModal img,
+#profileModal.modal img {
+    max-width: 80vw !important;
+    max-height: 80vh !important;
+    border-radius: 50% !important;
+    border: 3px solid var(--accent) !important;
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.9) !important;
+    object-fit: cover !important;
+    transition: transform 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-.modal.active img {
-    transform: scale(1);
+#profileModal.active img,
+#profileModal.modal.active img {
+    transform: scale(1) !important;
 }
 
-.modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    z-index: 1001;
+#profileModal .modal-close,
+#profileModal.modal .modal-close {
+    position: absolute !important;
+    top: 20px !important;
+    right: 30px !important;
+    color: white !important;
+    font-size: 3rem !important;
+    cursor: pointer !important;
+    transition: color 0.3s ease !important;
+    z-index: 1000000 !important;
+    line-height: 1 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
 }
 
-.modal-close:hover {
-    color: var(--accent);
+#profileModal .modal-close:hover,
+#profileModal.modal .modal-close:hover {
+    color: var(--accent) !important;
 }
 
 #mainnav {
@@ -1451,12 +1472,12 @@ header .wrapper {
 }
 
 /* Common elements */
-.modal {
-    background-color: rgba(0, 0, 0, 0.9);
+#profileModal {
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
-.modal-close {
-    color: var(--text);
+#profileModal .modal-close {
+    color: white;
 }
 
 .back-to-top {
@@ -4115,9 +4136,9 @@ html {
     }
 
     /* Modal */
-    .modal img {
-        max-width: 90%;
-        max-height: 90vh;
+    #profileModal img {
+        max-width: 85vw;
+        max-height: 85vh;
     }
 
     /* Back to Top Button */
@@ -4285,18 +4306,49 @@ body.loading {
     overflow: hidden;
 }
 
-body.loading > *:not(.page-loader) {
+body.loading > *:not(.page-loader):not(#profileModal) {
     opacity: 0;
 }
 
 /* Ensure special elements start hidden */
-body.loading .about-image,
 body.loading .about-social-links .social-link {
     opacity: 0;
 }
 
-body.loaded > *:not(.page-loader) {
+body.loading .about-image {
+    opacity: 0;
+    transform: scale(0);
+}
+
+body.loaded > *:not(.page-loader):not(#profileModal) {
     animation: contentReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Modal should not be affected by page load animations or any parent transforms */
+#profileModal,
+#profileModal.modal,
+#profileModal.active,
+#profileModal.modal.active {
+    animation: none !important;
+    filter: none !important;
+    transform: none !important;
+}
+
+/* Modal children can have transforms (for image scaling) */
+#profileModal * {
+    animation: none !important;
+    filter: none !important;
+}
+
+/* Ensure body and html don't create stacking context issues */
+body:has(#profileModal.active),
+html:has(#profileModal.active) {
+    overflow: hidden !important;
+}
+
+/* Fallback for browsers without :has() support */
+body.modal-open {
+    overflow: hidden !important;
 }
 
 @keyframes contentReveal {
@@ -4673,7 +4725,7 @@ body.loaded .back-to-top {
 
 /* Name text special animation on load */
 body.loaded .gradient-text {
-    animation: nameGlow 1.5s ease-out 0.5s;
+    animation: nameGlow 1.5s ease-out 0s;
 }
 
 @keyframes nameGlow {
@@ -4695,7 +4747,7 @@ body.loaded .gradient-text {
 
 /* Profile image special entrance */
 body.loaded .about-image {
-    animation: avatarPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s both;
+    animation: avatarPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0s forwards;
 }
 
 @keyframes avatarPop {
@@ -4704,9 +4756,17 @@ body.loaded .about-image {
         opacity: 0;
     }
     100% {
-        transform: scale(1) rotate(0deg);
+        transform: none;
         opacity: 1;
     }
+}
+
+/* Ensure clickable avatar always receives clicks */
+#about-avatar.clickable-avatar {
+    pointer-events: auto !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 /* Social links stagger */

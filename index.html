@@ -177,7 +177,7 @@
             <div class="hero-glow"></div>
         </div>
         <div class="wrapper hero-wrapper">
-            <div class="about-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div class="about-content">
                 <div class="about-text">
                     <div class="name-section">
                         <p class="greeting">Hi, I'm</p>
@@ -626,33 +626,64 @@
         // Profile Picture Modal
         const aboutAvatar = document.getElementById('about-avatar');
         const modal = document.getElementById('profileModal');
-        const modalClose = document.querySelector('.modal-close');
+        const modalClose = document.querySelector('#profileModal .modal-close');
 
-        aboutAvatar.addEventListener('click', () => {
-            modal.style.display = 'flex';
-            // Trigger reflow to enable transition
-            modal.offsetHeight;
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-        });
-
-        modalClose.addEventListener('click', () => {
-            modal.classList.remove('active');
-            setTimeout(() => {
-                modal.style.display = 'none';
-                document.body.style.overflow = ''; // Restore scrolling
-            }, 300); // Match the transition duration
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-                setTimeout(() => {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = ''; // Restore scrolling
-                }, 300); // Match the transition duration
+        function openModal() {
+            if (!modal) {
+                return;
             }
-        });
+            
+            // Ensure modal is a direct child of body (move it if needed)
+            if (modal.parentElement !== document.body) {
+                document.body.appendChild(modal);
+            }
+            
+            // Remove any inline styles that might conflict
+            modal.removeAttribute('style');
+            
+            // Add active class - CSS will handle the rest
+            modal.classList.add('active');
+            document.body.classList.add('modal-open');
+            
+            // Force a reflow to ensure styles apply
+            void modal.offsetHeight;
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.classList.remove('modal-open');
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.removeAttribute('style');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        if (aboutAvatar) {
+            aboutAvatar.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                openModal();
+            });
+        }
+
+        if (modalClose) {
+            modalClose.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                closeModal();
+            });
+        }
+
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        }
 
         // Back to Top Button
         const backToTopButton = document.getElementById('backToTop');
@@ -832,26 +863,30 @@
             const loader = document.getElementById('pageLoader');
             const body = document.body;
             
-            // Animation timing - total animation is ~2 seconds
-            const animationDuration = 2000;
+            // Animation timing - curtain starts at 1.2s, so we trigger loaded state then
+            // This allows name/image animations to complete before curtain fully opens
+            const curtainStartDelay = 1200;
+            const curtainDuration = 800;
+            const totalAnimationDuration = curtainStartDelay + curtainDuration;
             
             // When DOM is ready, start the reveal
             function startReveal() {
                 // Small delay to ensure styles are applied
                 requestAnimationFrame(() => {
+                    // Trigger loaded state when curtain starts opening
                     setTimeout(() => {
                         body.classList.remove('loading');
                         body.classList.add('loaded');
                         
-                        // Clean up loader after content reveal completes
+                        // Clean up loader after curtain animation completes
                         setTimeout(() => {
                             loader.classList.add('hidden');
                             // Remove loader from DOM after transition
                             setTimeout(() => {
                                 loader.remove();
                             }, 100);
-                        }, 800);
-                    }, animationDuration);
+                        }, curtainDuration);
+                    }, curtainStartDelay);
                 });
             }
             
