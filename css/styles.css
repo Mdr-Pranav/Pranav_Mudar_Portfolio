@@ -2199,10 +2199,11 @@ a:hover {
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
-    transition: all 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    will-change: transform, opacity;
 }
 
 .education-item::before {
