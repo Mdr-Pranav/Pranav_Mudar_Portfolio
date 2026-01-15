@@ -3510,35 +3510,59 @@ html {
 }
 
 /* Back to top button */
+/* Must be higher than page-loader (10000) to appear above it */
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--accent);
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    background: var(--accent) !important;
+    color: white !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4) !important;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 99;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
+    z-index: 1000000 !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
 }
 
 .back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
+}
+
+/* Force button positioning using ID selector for maximum specificity */
+/* Must be higher than page-loader (10000) and profileModal (999999) */
+#backToTop {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 1000000 !important;
+    display: flex !important;
+}
+
+/* Ensure visible state overrides everything */
+#backToTop.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
 }
 
 .back-to-top:hover {
     background: #2980b9;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
     color: white;
     text-decoration: none;
 }
@@ -4144,8 +4168,14 @@ html {
 
     /* Back to Top Button */
     .back-to-top {
-        right: 1rem;
-        bottom: 1rem;
+        right: 20px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .back-to-top i {
+        font-size: 1.3rem;
     }
 }
 
@@ -4307,7 +4337,7 @@ body.loading {
     overflow: hidden;
 }
 
-body.loading > *:not(.page-loader):not(#profileModal) {
+body.loading > *:not(.page-loader):not(#profileModal):not(.back-to-top) {
     opacity: 0;
 }
 
@@ -4321,7 +4351,27 @@ body.loading .about-image {
     transform: scale(0);
 }
 
-body.loaded > *:not(.page-loader):not(#profileModal) {
+/* Ensure back-to-top button is never hidden by loading state */
+body.loading .back-to-top {
+    display: flex !important;
+    pointer-events: auto !important;
+    z-index: 1000000 !important;
+}
+
+/* Override loading state when button should be visible */
+body.loading .back-to-top.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 1000000 !important;
+}
+
+/* Ensure button is above page loader */
+.page-loader ~ .back-to-top,
+body:has(.page-loader) .back-to-top {
+    z-index: 1000000 !important;
+}
+
+body.loaded > *:not(.page-loader):not(#profileModal):not(.back-to-top) {
     animation: contentReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -4375,6 +4425,13 @@ body.modal-open {
     z-index: 10000;
     pointer-events: none;
     perspective: 1000px;
+}
+
+/* Ensure back-to-top button is always above page loader */
+.page-loader ~ .back-to-top,
+body:has(.page-loader) .back-to-top,
+.page-loader + .back-to-top {
+    z-index: 1000000 !important;
 }
 
 .page-loader.hidden {

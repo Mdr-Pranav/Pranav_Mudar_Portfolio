@@ -135,6 +135,12 @@
             <span></span><span></span><span></span><span></span><span></span>
         </div>
     </div>
+    
+    <!-- Back to Top Button - Placed early to ensure it's above page loader -->
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+        <span style="display: none;">↑</span>
+    </a>
 	
     <!-- ------------------------------------------------------
     The site is designed to be mobile first. The wrapper elements
@@ -261,10 +267,10 @@
                     <li><i class="fas fa-eye"></i> Applied YOLOv8 for visual anomaly localization by converting time-series data into plots, enabling feature-level diagnostics with bounding boxes.</li>
                     <li><i class="fas fa-desktop"></i> Built a web-based dashboard (Flask + JS) for real-time upload, analysis, and visualization of anomalies in satellite health monitoring.</li>
                 </ul>
-                <div class="completed-bar">
+                <!-- <div class="completed-bar">
                     <div class="completed-fill"></div>
                     <div class="completed-shine"></div>
-                </div>
+                </div> -->
             </div>
 
             <div class="experience-item experience-completed" data-aos="fade-up" data-aos-duration="800">
@@ -286,10 +292,10 @@
                     <li><i class="fas fa-users"></i> Led the organization's design domain and managed 15 club meetings, workshops, hackathons, and events focused on AI and ML technologies, engaging an average of 30 attendees per session.</li>
                     <li><i class="fas fa-project-diagram"></i> Collaborated on five projects and research endeavors applying AI and ML techniques to real-world challenges, resulting in the development of solutions that garnered recognition within the club community.</li>
                 </ul>
-                <div class="completed-bar">
+                <!-- <div class="completed-bar">
                     <div class="completed-fill"></div>
                     <div class="completed-shine"></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -573,10 +579,10 @@
                             <i class="fas fa-envelope"></i>
                             <p>mudarpranav3@gmail.com</p>
                         </div>
-                        <div class="contact-detail-item">
+                        <!-- <div class="contact-detail-item">
                             <i class="fas fa-phone"></i>
                             <p>(+91) 9959956470</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="contact-form-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -609,11 +615,6 @@
         <span class="modal-close">&times;</span>
         <img src="/dp/Me2.jpg" alt="Pranav Mudar">
     </div>
-
-    <!-- Back to Top Button -->
-    <a href="#hero" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
 
     <script>
         // Initialize AOS
@@ -687,16 +688,62 @@
             });
         }
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
+        // Back to Top Button - Initialize after page is ready
+        function initBackToTopButton() {
+            const backToTopButton = document.getElementById('backToTop');
+            
+            if (backToTopButton) {
+                // Function to update button visibility
+                function updateBackToTopVisibility() {
+                    const scrollY = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
+                    if (scrollY > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                }
+                
+                // Check visibility on scroll (with throttling for performance)
+                let ticking = false;
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            updateBackToTopVisibility();
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+                
+                // Check initial visibility after a short delay to ensure page is loaded
+                setTimeout(() => {
+                    updateBackToTopVisibility();
+                }, 100);
+                
+                // Also check on window load
+                window.addEventListener('load', updateBackToTopVisibility);
+                
+                // Smooth scroll to top when button is clicked
+                backToTopButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
             }
-        });
+        }
+        
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initBackToTopButton);
+        } else {
+            // DOM is already ready
+            initBackToTopButton();
+        }
+        
+        // Also initialize after page load to ensure it works
+        window.addEventListener('load', initBackToTopButton);
         
         // Make entire project card clickable
         document.querySelectorAll('.projects article').forEach(article => {
