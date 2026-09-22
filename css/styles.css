@@ -2886,6 +2886,178 @@ a:hover {
     margin-bottom: 0;
 }
 
+/* LinkedIn-style experience stack (shared by all roles) */
+.experience-stack {
+    --exp-logo: 72px;
+    --exp-gap: 1.125rem;
+    --exp-line-x: calc(var(--exp-logo) / 2);
+    --exp-content-indent: calc(var(--exp-logo) + var(--exp-gap));
+    --exp-dot: 11px;
+    --exp-line-w: 3px;
+    padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.experience-stack .company-logo {
+    width: var(--exp-logo);
+    height: var(--exp-logo);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.experience-stack .experience-header {
+    margin-bottom: 0;
+    gap: var(--exp-gap);
+}
+
+.experience-stack .experience-company {
+    font-size: 1.05rem;
+}
+
+.experience-stack .exp-stack-summary,
+.experience-stack .exp-stack-meta {
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0;
+    line-height: 1.45;
+    font-size: 0.925rem;
+}
+
+.experience-stack .exp-stack-roles {
+    position: relative;
+    margin-top: 0.75rem;
+}
+
+.experience-stack .exp-stack-role {
+    position: relative;
+    padding-left: var(--exp-content-indent);
+    padding-bottom: 1rem;
+}
+
+.experience-stack .exp-stack-role:last-child {
+    padding-bottom: 0;
+}
+
+.experience-stack .exp-stack-role h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: var(--heading);
+}
+
+.experience-stack .exp-stack-roles::before {
+    content: '';
+    position: absolute;
+    left: var(--exp-line-x);
+    transform: translateX(-50%);
+    top: calc(var(--exp-dot) * 0.65);
+    bottom: 1.25rem;
+    width: var(--exp-line-w);
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 2px;
+}
+
+.experience-stack .exp-stack-roles:has(.exp-stack-role:only-child)::before {
+    display: none;
+}
+
+.experience-stack .exp-stack-role::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--exp-line-x) - var(--exp-dot) / 2);
+    top: 0.5rem;
+    width: var(--exp-dot);
+    height: var(--exp-dot);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 0 0 4px var(--card-bg);
+    z-index: 1;
+}
+
+.experience-stack .exp-stack-details-panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transition: max-height 0.45s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.experience-stack.is-expanded .exp-stack-details-panel {
+    max-height: 1600px;
+    opacity: 1;
+    margin-top: 0.75rem;
+}
+
+.experience-stack .experience-details {
+    padding-left: var(--exp-content-indent);
+    margin-top: 0;
+}
+
+.experience-stack .experience-details li {
+    margin-bottom: 0.75rem;
+    font-size: 0.925rem;
+    line-height: 1.45;
+}
+
+.experience-stack:not(.has-exp-details) {
+    padding-bottom: 1.85rem;
+}
+
+.experience-stack.has-exp-details {
+    padding-bottom: 0.35rem;
+}
+
+.experience-stack.has-exp-details .exp-details-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% + 3rem);
+    margin: 0.5rem -1.5rem 0;
+    padding: 0.35rem 0 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.experience-stack.has-exp-details .exp-details-tab {
+    display: block;
+    width: 48px;
+    height: 12px;
+    background: var(--light-gray);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transition: transform 0.25s ease, background 0.2s ease, filter 0.2s ease;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+}
+
+.experience-stack.has-exp-details .exp-details-toggle:hover .exp-details-tab,
+.experience-stack.has-exp-details .exp-details-toggle:focus-visible .exp-details-tab {
+    background: #404040;
+}
+
+.experience-stack.has-exp-details .exp-details-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.experience-stack.has-exp-details.is-expanded .exp-details-tab {
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .experience-stack {
+        padding: 1rem 1rem 0.85rem;
+    }
+
+    .experience-stack:not(.has-exp-details) {
+        padding-bottom: 1.5rem;
+    }
+
+    .experience-stack.has-exp-details .exp-details-toggle {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+
 /* In Progress Experience Item - Pure Storage */
 .experience-in-progress {
     position: relative;
