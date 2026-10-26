@@ -1,0 +1,2380 @@
+{
+ "url": "index.html",
+ "at": "2026-10-26T12:57:35.387Z",
+ "allow": [
+  "glass",
+  "shadow",
+  "outlined-box",
+  "button-fx",
+  "gradient"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.56,
+    0.72,
+    0.7,
+    0.55,
+    0.45,
+    0.61,
+    0.61
+   ],
+   "motion": {
+    "elements": 35,
+    "css": 21,
+    "transitions": 14,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5417,
+     "screens": 6,
+     "words": 526,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "Me2.jpg",
+      "GenAI1.jpeg",
+      "backgroundmusic1.jpg",
+      "ultimate1.jpg",
+      "Finance_Manager.jpg",
+      "elearning1.jpg",
+      "StudentTools1.jpg",
+      "DisasterManagement1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Pranav Mudar",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 115.2,
+     "vw": 8,
+     "font": "Geist",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.45,
+     "top": 120,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Pranav Mudar",
+     "words": 2,
+     "lines": 2,
+     "size": 115.2,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "Pranav Mudar",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 115.2,
+      "vw": 8,
+      "font": "Geist",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 120,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Experience",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 769,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Featured Projects",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1763,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technical Skills",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 3055,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Certifications",
+      "words": 1,
+      "chars": 14,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 3565,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Education",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 4120,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Say hello",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 4844,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "mudarpranav3@gmail.com",
+      "words": 1,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Geist",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 4970,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Pranav Mudar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 158.9,
+      "vw": 11,
+      "font": "Geist",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.7,
+      "top": 5087,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      24,
+      28,
+      56,
+      115,
+      159
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 17,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.4
+     },
+     "measureChars": 77,
+     "max": {
+      "size": 158.9,
+      "vw": 11,
+      "font": "Geist",
+      "text": "Pranav Mudar"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Jan 2023 – Dec 2024 · 2 yrs",
+      "above": "Featured Projects",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 1668
+     },
+     {
+      "text": "HTML, JavaScript, Python, MySQL",
+      "above": "Technical Skills",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 2933
+     },
+     {
+      "text": "Bengaluru, India",
+      "above": "Pranav Mudar",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 4952
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#070b1a",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 0.58,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#e6ebf5",
+       "share": 0.48
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#9aa6bf",
+       "share": 0.23
+      },
+      {
+       "color": "#00e676",
+       "share": 0
+      },
+      {
+       "color": "#e6ebff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#3b82f6",
+      "hsl": {
+       "h": 217,
+       "s": 0.91,
+       "l": 0.6
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 5,
+     "radius": "pill",
+     "height": 49,
+     "withShadow": 5,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in touch",
+      "Email",
+      "Phone",
+      "LinkedIn",
+      "GitHub"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 25,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.about-image → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(37, 99, 235, 0.45) 0px 24p",
+      "a.hero-cta → rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(37, 99, 235, 0.7) 0px 8px 2",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 27,
+     "dashed": 0,
+     "blurred": 35,
+     "roundedBoxes": 27,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 10,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 915
+      },
+      {
+       "count": 9,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1868
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 3201
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4256
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.69
+     },
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist",
+     "font awesome 6 brands",
+     "font awesome 6 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5417,
+    "margins": {
+     "left": 160,
+     "right": 161
+    },
+    "sections": [
+     {
+      "sel": "section#hero.about-section",
+      "tag": "section",
+      "top": 80,
+      "height": 617,
+      "words": 59,
+      "media": 2,
+      "middle": 88,
+      "heading": {
+       "text": "Pranav Mudar",
+       "size": 115,
+       "tag": "h1"
+      },
+      "left": 160,
+      "right": 161,
+      "textLeft": 160,
+      "textRight": 627,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 697,
+      "height": 994,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 161,
+      "textLeft": 160,
+      "textRight": 191,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work",
+      "tag": "section",
+      "top": 1691,
+      "height": 1292,
+      "words": 106,
+      "media": 9,
+      "middle": 22,
+      "heading": {
+       "text": "Featured Projects",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 161,
+      "textLeft": 160,
+      "textRight": 203,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills",
+      "tag": "section",
+      "top": 2983,
+      "height": 510,
+      "words": 38,
+      "media": 0,
+      "middle": 133,
+      "heading": {
+       "text": "Technical Skills",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 231,
+      "textLeft": 160,
+      "textRight": 231,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certifications",
+      "tag": "section",
+      "top": 3493,
+      "height": 555,
+      "words": 42,
+      "media": 0,
+      "middle": 163,
+      "heading": {
+       "text": "Certifications",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 336,
+      "textLeft": 160,
+      "textRight": 336,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#education",
+      "tag": "section",
+      "top": 4048,
+      "height": 667,
+      "words": 41,
+      "media": 0,
+      "middle": 146,
+      "heading": {
+       "text": "Education",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 287,
+      "textLeft": 160,
+      "textRight": 287,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact",
+      "tag": "section",
+      "top": 4715,
+      "height": 580,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Pranav Mudar",
+       "size": 159,
+       "tag": "p"
+      },
+      "left": 217,
+      "right": 250,
+      "textLeft": 217,
+      "textRight": 250,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 5295,
+      "height": 122,
+      "words": 3,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 175,
+      "right": 1138,
+      "textLeft": 175,
+      "textRight": 1138,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Pranav Mudar",
+      "size": 115,
+      "top": 120,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 160,
+      "n": 7
+     },
+     {
+      "x": 185,
+      "n": 4
+     },
+     {
+      "x": 275,
+      "n": 4
+     },
+     {
+      "x": 565,
+      "n": 4
+     },
+     {
+      "x": 945,
+      "n": 4
+     },
+     {
+      "x": 315,
+      "n": 3
+     },
+     {
+      "x": 217,
+      "n": 1
+     },
+     {
+      "x": 797,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 28,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.13,
+    "voidBox": {
+     "x": 480,
+     "y": 720,
+     "w": 960,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.55,
+    0.81,
+    0.87,
+    0.93,
+    0.87,
+    0.81,
+    0.87,
+    0.87,
+    0.76,
+    0.76
+   ],
+   "motion": {
+    "elements": 35,
+    "css": 21,
+    "transitions": 14,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 10104,
+     "screens": 9.9,
+     "words": 526,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "Me2.jpg",
+      "GenAI1.jpeg",
+      "backgroundmusic1.jpg",
+      "ultimate1.jpg",
+      "Finance_Manager.jpg",
+      "elearning1.jpg",
+      "StudentTools1.jpg",
+      "DisasterManagement1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Pranav Mudar",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 61.4,
+     "vw": 8,
+     "font": "Geist",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.5,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Pranav Mudar",
+     "words": 2,
+     "lines": 1,
+     "size": 61.4,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "Pranav Mudar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 61.4,
+      "vw": 8,
+      "font": "Geist",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Experience",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 1010,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Featured Projects",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 1921,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technical Skills",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 7186,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Certifications",
+      "words": 1,
+      "chars": 14,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 8214,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Education",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 8762,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Say hello",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 9508,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pranav Mudar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 103.8,
+      "vw": 13.5,
+      "font": "Geist",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 9879,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      22,
+      36,
+      61,
+      104
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 17,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.4
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 103.8,
+      "vw": 13.5,
+      "font": "Geist",
+      "text": "Pranav Mudar"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Jan 2023 – Dec 2024 · 2 yrs",
+      "above": "Featured Projects",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 1855
+     },
+     {
+      "text": "HTML, JavaScript, PHP, MySQL",
+      "above": "Technical Skills",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 7116
+     },
+     {
+      "text": "SQL, MySQL",
+      "above": "Certifications",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 8157
+     },
+     {
+      "text": "Learn Quest",
+      "above": "Education",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15,
+      "top": 8677
+     },
+     {
+      "text": "High School",
+      "above": "Say hello",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 9441
+     },
+     {
+      "text": "Bengaluru, India",
+      "above": "Pranav Mudar",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 9806
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#070b1a",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 0.58,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#e6ebf5",
+       "share": 0.48
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#9aa6bf",
+       "share": 0.23
+      },
+      {
+       "color": "#00e676",
+       "share": 0
+      },
+      {
+       "color": "#e6ebff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#3b82f6",
+      "hsl": {
+       "h": 217,
+       "s": 0.91,
+       "l": 0.6
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 5,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 5,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in touch",
+      "Email",
+      "Phone",
+      "LinkedIn",
+      "GitHub"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 25,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.about-image → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(37, 99, 235, 0.45) 0px 24p",
+      "a.hero-cta → rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(37, 99, 235, 0.7) 0px 8px 2",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 28,
+     "dashed": 0,
+     "blurred": 35,
+     "roundedBoxes": 28,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 10,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.83
+     },
+     {
+      "type": "img",
+      "ratio": 0.22
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 121,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist",
+     "font awesome 6 brands",
+     "font awesome 6 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 10104,
+    "margins": {
+     "left": 20,
+     "right": 21
+    },
+    "sections": [
+     {
+      "sel": "header",
+      "tag": "header",
+      "top": 0,
+      "height": 121,
+      "words": 5,
+      "media": 0,
+      "middle": 154,
+      "heading": null,
+      "left": 33,
+      "right": 241,
+      "textLeft": 33,
+      "textRight": 241,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#hero.about-section",
+      "tag": "section",
+      "top": 121,
+      "height": 848,
+      "words": 59,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Pranav Mudar",
+       "size": 61,
+       "tag": "h1"
+      },
+      "left": 55,
+      "right": 62,
+      "textLeft": 55,
+      "textRight": 62,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 970,
+      "height": 912,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work",
+      "tag": "section",
+      "top": 1881,
+      "height": 5265,
+      "words": 106,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Featured Projects",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills",
+      "tag": "section",
+      "top": 7146,
+      "height": 1028,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technical Skills",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 306,
+      "textLeft": 20,
+      "textRight": 306,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certifications",
+      "tag": "section",
+      "top": 8174,
+      "height": 548,
+      "words": 42,
+      "media": 0,
+      "middle": 87,
+      "heading": {
+       "text": "Certifications",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 90,
+      "textLeft": 20,
+      "textRight": 90,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#education",
+      "tag": "section",
+      "top": 8722,
+      "height": 711,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Education",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 202,
+      "textLeft": 20,
+      "textRight": 202,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact",
+      "tag": "section",
+      "top": 9433,
+      "height": 581,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Pranav Mudar",
+       "size": 104,
+       "tag": "p"
+      },
+      "left": 56,
+      "right": 77,
+      "textLeft": 56,
+      "textRight": 77,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Pranav Mudar",
+      "size": 61,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 45,
+      "n": 13
+     },
+     {
+      "x": 127,
+      "n": 7
+     },
+     {
+      "x": 20,
+      "n": 5
+     },
+     {
+      "x": 55,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 28,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.76,
+    0.77,
+    0.86,
+    0.85,
+    0.79,
+    0.79,
+    0.83,
+    0.84,
+    0.79,
+    0.79,
+    0.76
+   ],
+   "motion": {
+    "elements": 35,
+    "css": 21,
+    "transitions": 14,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9057,
+     "screens": 10.7,
+     "words": 526,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "Me2.jpg",
+      "GenAI1.jpeg",
+      "backgroundmusic1.jpg",
+      "ultimate1.jpg",
+      "Finance_Manager.jpg",
+      "elearning1.jpg",
+      "StudentTools1.jpg",
+      "DisasterManagement1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Pranav Mudar",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 56,
+     "vw": 14.4,
+     "font": "Geist",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 141,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Pranav Mudar",
+     "words": 2,
+     "lines": 2,
+     "size": 56,
+     "font": "Geist"
+    },
+    "headings": [
+     {
+      "text": "Pranav Mudar",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 56,
+      "vw": 14.4,
+      "font": "Geist",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 141,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Experience",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1139,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Featured Projects",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2224,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technical Skills",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5640,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Certifications",
+      "words": 1,
+      "chars": 14,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6749,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Education",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7650,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "PES University",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.38,
+      "top": 7790,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Narayana Jr. College",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.53,
+      "top": 8025,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Vishwa Bharathi E.M. High School",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.54,
+      "top": 8233,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Say hello",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Geist",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 8445,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pranav Mudar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 46.1,
+      "vw": 11.8,
+      "font": "Geist",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 8894,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Geist",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      22,
+      36,
+      46,
+      56
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Geist",
+      "size": 17,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.4
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 56,
+      "vw": 14.4,
+      "font": "Geist",
+      "text": "Pranav Mudar"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Jan 2023 – Dec 2024 · 2 yrs",
+      "above": "Featured Projects",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 2160
+     },
+     {
+      "text": "HTML, JavaScript, PHP, MySQL",
+      "above": "Technical Skills",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 5571
+     },
+     {
+      "text": "SQL, MySQL",
+      "above": "Certifications",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 6695
+     },
+     {
+      "text": "Learn Quest",
+      "above": "Education",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15,
+      "top": 7565
+     },
+     {
+      "text": "High School",
+      "above": "Say hello",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 8365
+     },
+     {
+      "text": "Bengaluru, India",
+      "above": "Pranav Mudar",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 8826
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#070b1a",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 0.58,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#e6ebf5",
+       "share": 0.48
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#9aa6bf",
+       "share": 0.23
+      },
+      {
+       "color": "#00e676",
+       "share": 0
+      },
+      {
+       "color": "#e6ebff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#3b82f6",
+      "hsl": {
+       "h": 217,
+       "s": 0.91,
+       "l": 0.6
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 5,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in touch",
+      "Email",
+      "Phone",
+      "LinkedIn"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 25,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.about-image → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(37, 99, 235, 0.45) 0px 24p",
+      "a.hero-cta → rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(37, 99, 235, 0.7) 0px 8px 2",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p"
+     ],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "a.hero-cta → linear-gradient(rgb(59, 130, 246), rgb(37, 99, 235))",
+      "a → linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))"
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 28,
+     "dashed": 0,
+     "blurred": 35,
+     "roundedBoxes": 28,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 10,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1264
+      },
+      {
+       "count": 9,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2307
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5765
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7765
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.86
+     },
+     {
+      "type": "img",
+      "ratio": 0.35
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 121,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist",
+     "font awesome 6 brands",
+     "font awesome 6 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9057,
+    "margins": {
+     "left": 20,
+     "right": 21
+    },
+    "sections": [
+     {
+      "sel": "header",
+      "tag": "header",
+      "top": 0,
+      "height": 121,
+      "words": 5,
+      "media": 0,
+      "middle": 18,
+      "heading": null,
+      "left": 33,
+      "right": 52,
+      "textLeft": 33,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#hero.about-section",
+      "tag": "section",
+      "top": 121,
+      "height": 978,
+      "words": 59,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Pranav Mudar",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 1099,
+      "height": 1085,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work",
+      "tag": "section",
+      "top": 2184,
+      "height": 3416,
+      "words": 106,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Featured Projects",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills",
+      "tag": "section",
+      "top": 5600,
+      "height": 1110,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technical Skills",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 62,
+      "textLeft": 20,
+      "textRight": 62,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certifications",
+      "tag": "section",
+      "top": 6709,
+      "height": 901,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Certifications",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 82,
+      "textLeft": 20,
+      "textRight": 82,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#education",
+      "tag": "section",
+      "top": 7610,
+      "height": 766,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Education",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 47,
+      "textLeft": 20,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact",
+      "tag": "section",
+      "top": 8376,
+      "height": 590,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Pranav Mudar",
+       "size": 46,
+       "tag": "p"
+      },
+      "left": 49,
+      "right": 59,
+      "textLeft": 49,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Pranav Mudar",
+      "size": 56,
+      "top": 141,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 45,
+      "n": 14
+     },
+     {
+      "x": 20,
+      "n": 7
+     },
+     {
+      "x": 127,
+      "n": 7
+     }
+    ],
+    "leftBlocks": 28,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "3 eyebrow/kicker label(s) above headings: \"Jan 2023 – Dec 2024 · 2 yrs\" above \"Featured Projects\"; \"HTML, JavaScript, Python, MySQL\" above \"Technical Skills\"; \"Bengaluru, India\" above \"Pranav Mudar\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "4 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (13, 14, 15, 16, 17, 18, 19, 20, 22, 24, 28, 56, 115, 159).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 8 different lines (160px, 185px, 275px, 565px, 945px, 315px, 217px); the three most used hold only 54% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/desktop-fold.jpg",
+   "pages": [
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/desktop-page-01.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/tablet-fold.jpg",
+   "pages": [
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/tablet-page-01.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/mobile-fold.jpg",
+   "pages": [
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/mobile-page-01.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/after/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

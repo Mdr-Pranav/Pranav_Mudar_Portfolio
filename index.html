@@ -13,21 +13,13 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 	
 	<!--/ /-------- Google Fonts --------/ /-->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
 	
 	<!--/ /-------- Font Awesome --------/ /-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 	<!--/ /-------- Your Styles --------/ /-->
 	<link href="css/styles.css" rel="stylesheet">
-
-    <!-- EmailJS Library -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("NgnAcEufXLE6bvkiU"); // Public Key
-        })();
-    </script>
 
     <!-- AOS - Animate On Scroll Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -40,44 +32,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        .certifications-scroll {
-            display: flex;
-            animation: scrollCertificates 60s linear infinite;
-            animation-play-state: running;
-        }
-
-        @keyframes scrollCertificates {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .certifications-scroll.paused {
-            animation-play-state: paused;
-        }
-
-        .certifications-container {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .certifications-scroll::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1));
-        }
-
         .about-section {
             padding-top: 0px;
             scroll-margin-top: 0px;
-            background: #0a0a0a !important;
         }
 
         #hero {
@@ -107,34 +64,7 @@
     })(document, 'script');
   </script> -->
 
-<body class="loading">
-    
-    <!-- Epic Page Load Animation -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-background"></div>
-        <div class="loader-lines">
-            <div class="loader-line line-1"></div>
-            <div class="loader-line line-2"></div>
-            <div class="loader-line line-3"></div>
-            <div class="loader-line line-4"></div>
-            <div class="loader-line line-5"></div>
-        </div>
-        <div class="loader-center">
-            <div class="loader-ring"></div>
-            <div class="loader-ring ring-2"></div>
-            <div class="loader-ring ring-3"></div>
-            <div class="loader-logo">P</div>
-        </div>
-        <div class="loader-reveal">
-            <div class="reveal-left"></div>
-            <div class="reveal-right"></div>
-        </div>
-        <div class="loader-particles">
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </div>
+<body class="loaded">
     
     <!-- Back to Top Button - Placed early to ensure it's above page loader -->
     <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
@@ -152,7 +82,7 @@
         <div class="wrapper">
             
 			<div class="logo-container">
-				<h1><a href="#hero">Pranav</a></h1>
+				<a class="wordmark" href="#hero">Pranav</a>
             </div>       
             
 			<!-- ------------------------------------------------------
@@ -179,22 +109,19 @@
     
     <section id="hero" class="about-section">
         <div class="hero-background">
-            <div class="hero-grid"></div>
-            <div class="hero-glow"></div>
         </div>
         <div class="wrapper hero-wrapper">
             <div class="about-content">
                 <div class="about-text">
                     <div class="name-section">
-                        <p class="greeting">Hi, I'm</p>
-                        <h1 class="name"><span class="gradient-text">PRANAV MUDAR</span></h1>
+                        <h1 class="name">Pranav Mudar</h1>
                     </div>
                     <div class="about-image">
-                        <img src="/dp/Me2.jpg" alt="Pranav Mudar" id="about-avatar" class="clickable-avatar">
+                        <img src="dp/Me2.jpg" alt="Pranav Mudar" id="about-avatar" class="clickable-avatar" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View photo of Pranav Mudar">
                     </div>
-                    <p class="subtitle">Computer Science student at PES University</p>
-                    <p>I'm a passionate Computer Science student with strong interests in web technologies, artificial intelligence, and data analytics. What began as simple curiosity about how things work has grown into a drive to build innovative, real-world solutions.</p>
-                    <p>Through academics and personal projects, I've developed hands-on experience in full-stack web development, machine learning, and software engineering, and I'm committed to continuous learning and staying current with new tools and trends. When I'm not coding, I'm exploring emerging tech, contributing to open source, or building personal projects that push my skills and creativity.</p>
+                    <p class="subtitle">Member of Technical Staff at Everpure</p>
+                    <p>I'm a firmware engineer at Everpure with a Computer Science degree from PES University. Beyond firmware, I build across full-stack web development, machine learning and data, and I keep exploring new tech through personal projects that push my skills further.</p>
+                    <a href="#contact" class="hero-cta">Get in touch <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     <div class="about-social-links">
                         <a href="mailto:mudarpranav3@gmail.com" class="social-link" title="Email">
                             <i class="fas fa-envelope"></i>
@@ -224,7 +151,7 @@
     
     <section id="experience">
         <div class="wrapper">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <h2>Experience</h2>
             
             <div class="experience-item experience-stack" data-aos="fade-up" data-aos-duration="800">
                 <div class="experience-header">
@@ -272,10 +199,10 @@
                 </div>
                 <div class="exp-stack-details-panel" id="exp-details-isro" aria-hidden="true">
                     <ul class="experience-details">
-                        <li><i class="fas fa-brain"></i> Explored ST-GNN, YOLO, LSTM Autoencoders, and Vision Transformers for anomaly detection in satellite telemetry; pivoted based on data structure and model limitations.</li>
-                        <li><i class="fas fa-project-diagram"></i> Developed a multi-model anomaly detection pipeline for satellite telemetry using CAE, One-Class SVM, and GMM, achieving 90% accuracy on unlabeled data.</li>
-                        <li><i class="fas fa-eye"></i> Applied YOLOv8 for visual anomaly localization by converting time-series data into plots, enabling feature-level diagnostics with bounding boxes.</li>
-                        <li><i class="fas fa-desktop"></i> Built a web-based dashboard (Flask + JS) for real-time upload, analysis, and visualization of anomalies in satellite health monitoring.</li>
+                        <li>Explored ST-GNN, YOLO, LSTM Autoencoders, and Vision Transformers for anomaly detection in satellite telemetry; pivoted based on data structure and model limitations.</li>
+                        <li>Developed a multi-model anomaly detection pipeline for satellite telemetry using CAE, One-Class SVM, and GMM, achieving 90% accuracy on unlabeled data.</li>
+                        <li>Applied YOLOv8 for visual anomaly localization by converting time-series data into plots, enabling feature-level diagnostics with bounding boxes.</li>
+                        <li>Built a web-based dashboard (Flask + JS) for real-time upload, analysis, and visualization of anomalies in satellite health monitoring.</li>
                     </ul>
                 </div>
                 <button type="button" class="exp-details-toggle" aria-expanded="false" aria-controls="exp-details-isro" aria-label="Show ISRO experience details" data-label-show="Show ISRO experience details" data-label-hide="Hide ISRO experience details">
@@ -309,8 +236,8 @@
                 </div>
                 <div class="exp-stack-details-panel" id="exp-details-pes" aria-hidden="true">
                     <ul class="experience-details">
-                        <li><i class="fas fa-users"></i> Led the organization's design domain and managed 15 club meetings, workshops, hackathons, and events focused on AI and ML technologies, engaging an average of 30 attendees per session.</li>
-                        <li><i class="fas fa-project-diagram"></i> Collaborated on five projects and research endeavors applying AI and ML techniques to real-world challenges, resulting in the development of solutions that garnered recognition within the club community.</li>
+                        <li>Led the organization's design domain and managed 15 club meetings, workshops, hackathons, and events focused on AI and ML technologies, engaging an average of 30 attendees per session.</li>
+                        <li>Collaborated on five projects and research endeavors applying AI and ML techniques to real-world challenges, resulting in the development of solutions that garnered recognition within the club community.</li>
                     </ul>
                 </div>
                 <button type="button" class="exp-details-toggle" aria-expanded="false" aria-controls="exp-details-pes" aria-label="Show PES University experience details" data-label-show="Show PES University experience details" data-label-hide="Hide PES University experience details">
@@ -332,101 +259,92 @@
                 <article data-aos="fade-up" data-aos-duration="800">
                     <a href="projects/generative-ai-research.html" class="project-link"></a>
                     <span class="project-badge research">Research</span>
-                    <h3><i class="fas fa-heartbeat"></i> Generative AI for 3D Cardiac Modeling from MRI Data</h3>
+                    <h3>Generative AI for 3D Cardiac Modeling from MRI Data</h3>
                     <a href="projects/generative-ai-research.html" class="project-image">
-                        <img src="/projects/Pictures/GenAI1.jpeg" alt="Generative AI for 3D Cardiac Modeling">
+                        <img src="projects/Pictures/GenAI1.jpeg" alt="Generative AI for 3D Cardiac Modeling">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> TensorFlow, PyTorch, Keras, GANs, 3D U-Net</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> TensorFlow, PyTorch, Keras, GANs, 3D U-Net</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <a href="projects/background-music-generation.html" class="project-link"></a>
                     <span class="project-badge research">Research</span>
-                    <h3><i class="fas fa-music"></i> Generative AI for Custom Background Music Generation</h3>
+                    <h3>Generative AI for Custom Background Music Generation</h3>
                     <a href="projects/background-music-generation.html" class="project-image">
-                        <img src="/projects/Pictures/backgroundmusic1.jpg" alt="Background Music Generation">
+                        <img src="projects/Pictures/backgroundmusic1.jpg" alt="Background Music Generation">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> Python, Deep Learning, Gemini API, Audio Processing</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Python, Deep Learning, Gemini API, Audio Processing</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <a href="projects/ultimate-tic-tac-toe.html" class="project-link"></a>
                     <span class="project-badge research">Research</span>
-                    <h3><i class="fas fa-gamepad"></i> Ultimate Tic-Tac-Toe with Reinforcement Learning</h3>
+                    <h3>Ultimate Tic-Tac-Toe with Reinforcement Learning</h3>
                     <a href="projects/ultimate-tic-tac-toe.html" class="project-image">
-                        <img src="/projects/Pictures/ultimate1.jpg" alt="Ultimate Tic-Tac-Toe">
+                        <img src="projects/Pictures/ultimate1.jpg" alt="Ultimate Tic-Tac-Toe">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> Python, Q-Learning, Deep Q-Learning, Neural Networks</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Python, Q-Learning, Deep Q-Learning, Neural Networks</p>
                 </article>
                 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <a href="projects/personal-finance-manager.html" class="project-link"></a>
                     <span class="project-badge coded">Coded</span>
-                    <h3><i class="fas fa-wallet"></i> Personal Finance Manager</h3>
+                    <h3>Personal Finance Manager</h3>
                     <a href="projects/personal-finance-manager.html" class="project-image">
-                        <img src="/projects/Pictures/Finance_Manager.jpg" alt="Personal Finance Manager">
+                        <img src="projects/Pictures/Finance_Manager.jpg" alt="Personal Finance Manager">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> HTML, JavaScript, Node.js, MySQL, Tailwind CSS</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> HTML, JavaScript, Node.js, MySQL, Tailwind CSS</p>
                 </article>
                 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <a href="projects/elearning.html" class="project-link"></a>
                     <span class="project-badge coded">Coded</span>
-                    <h3><i class="fas fa-graduation-cap"></i> E-Learning Platform</h3>
+                    <h3>E-Learning Platform</h3>
                     <a href="projects/elearning.html" class="project-image">
-                        <img src="/projects/Pictures/elearning1.jpg" alt="E-Learning Platform">
+                        <img src="projects/Pictures/elearning1.jpg" alt="E-Learning Platform">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> Java, Spring Boot, React, PostgreSQL</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Java, Spring Boot, React, PostgreSQL</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <a href="projects/attendance-calculator.html" class="project-link"></a>
                     <span class="project-badge deployed">Deployed</span>
-                    <h3><i class="fas fa-tasks"></i> Student Tools</h3>
+                    <h3>Student Tools</h3>
                     <a href="projects/attendance-calculator.html" class="project-image">
                         <img src="projects/Pictures/StudentTools1.jpg" alt="Student Tools">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> HTML, JavaScript, Python, MySQL</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> HTML, JavaScript, Python, MySQL</p>
                 </article>
                 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <a href="projects/disaster-management.html" class="project-link"></a>
                     <span class="project-badge coded">Coded</span>
-                    <h3><i class="fas fa-hands-helping"></i> Website for Disaster Management</h3>
+                    <h3>Website for Disaster Management</h3>
                     <a href="projects/disaster-management.html" class="project-image">
-                        <img src="/projects/Pictures/DisasterManagement1.jpg" alt="Disaster Management Project">
+                        <img src="projects/Pictures/DisasterManagement1.jpg" alt="Disaster Management Project">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> HTML, JavaScript, Python, MySQL</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> HTML, JavaScript, Python, MySQL</p>
                 </article>
                 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <a href="projects/chat-server.html" class="project-link"></a>
                     <span class="project-badge coded">Coded</span>
-                    <h3><i class="fas fa-comments"></i> Chat Server with File Transfer</h3>
+                    <h3>Chat Server with File Transfer</h3>
                     <a href="projects/chat-server.html" class="project-image">
-                        <img src="/projects/Pictures/Chatserver1.webp" alt="Chat Server Project">
+                        <img src="projects/Pictures/Chatserver1.webp" alt="Chat Server Project">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> Python, Socket Programming, Threading</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Python, Socket Programming, Threading</p>
                 </article>
                 
                 
                 <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <a href="projects/event-management.html" class="project-link"></a>
                     <span class="project-badge coded">Coded</span>
-                    <h3><i class="fas fa-calendar-alt"></i> Event Management Platform</h3>
+                    <h3>Event Management Platform</h3>
                     <a href="projects/event-management.html" class="project-image">
                         <img src="projects/Pictures/concert.jpg" alt="Event Management Website">
                     </a>
-                    <br>
-                    <p class="tech-stack"><strong><i class="fas fa-cogs"></i> Technologies:</strong> HTML, JavaScript, PHP, MySQL</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> HTML, JavaScript, PHP, MySQL</p>
                 </article>
             </section>
         </div>
@@ -444,33 +362,33 @@
             
             <div class="skills-container">
                 <div class="skill-category" data-aos="fade-up" data-aos-duration="800">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <h3>Programming Languages</h3>
                     <ul class="skill-list">
-                        <li><i class="fab fa-python"></i> Python, Data Structures</li>
-                        <li><i class="fas fa-globe"></i> Front End Web Development (HTML, CSS, JavaScript)</li>
-                        <li><i class="fas fa-database"></i> MySQL, Java</li>
-                        <li><i class="fab fa-linux"></i> Linux (Shell Programming)</li>
+                        <li>Python, Data Structures</li>
+                        <li>Front End Web Development (HTML, CSS, JavaScript)</li>
+                        <li>MySQL, Java</li>
+                        <li>Linux (Shell Programming)</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <h3><i class="fas fa-brain"></i> Machine Learning Libraries</h3>
+                    <h3>Machine Learning Libraries</h3>
                     <ul class="skill-list">
-                        <li><i class="fas fa-cogs"></i> Scikit-learn</li>
-                        <li><i class="fas fa-project-diagram"></i> TensorFlow</li>
-                        <li><i class="fas fa-layer-group"></i> Keras</li>
-                        <li><i class="fas fa-chart-bar"></i> Statistics</li>
-                        <li><i class="fas fa-robot"></i> Basics of Supervised and Unsupervised Learning</li>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                        <li>Statistics</li>
+                        <li>Basics of Supervised and Unsupervised Learning</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+                    <h3>Developer Tools</h3>
                     <ul class="skill-list">
-                        <li><i class="fas fa-book-open"></i> Jupyter Notebook</li>
-                        <li><i class="fab fa-github"></i> GitHub</li>
-                        <li><i class="fas fa-file-excel"></i> Microsoft Office (Advanced Excel, Word)</li>
-                        <li><i class="fas fa-database"></i> SQL, MySQL</li>
+                        <li>Jupyter Notebook</li>
+                        <li>GitHub</li>
+                        <li>Microsoft Office (Advanced Excel, Word)</li>
+                        <li>SQL, MySQL</li>
                     </ul>
                 </div>
             </div>
@@ -479,65 +397,86 @@
     
     <section id="certifications">
         <div class="wrapper">
-            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <h2>Certifications</h2>
             
-            <div class="certifications-container">
-                <div class="certifications-scroll">
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/VHNSGW9VL9VW">
-                        <span class="cert-number">1</span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Cloud Logo" class="cert-logo">
-                        <h3>Introduction to Generative AI</h3>
-                        <p class="company-name">Google Cloud</p>
-                    </div>
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/6NS74ZTWMRFB">
-                        <span class="cert-number">2</span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="cert-logo">
-                        <h3>Introduction to Artificial Intelligence</h3>
-                        <p class="company-name">IBM</p>
-                    </div>
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/PPQLQGSH3GAU">
-                        <span class="cert-number">3</span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="cert-logo">
-                        <h3>Getting Started with AI using IBM Watson</h3>
-                        <p class="company-name">IBM</p>
-                    </div>
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/78TX5G24H6LM">
-                        <span class="cert-number">4</span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="cert-logo">
-                        <h3>Tools of Trade: Linux and SQL</h3>
-                        <p class="company-name">Google</p>
-                    </div>
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/VC7ZCH6XMTL7">
-                        <span class="cert-number">5</span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta Logo" class="cert-logo">
-                        <h3>Introduction to Databases</h3>
-                        <p class="company-name">Meta</p>
-                    </div>
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/GY7UFSTVLHYE">
-                        <span class="cert-number">6</span>
-                        <img src="/Images/Michigan.jpeg" alt="University of Michigan Logo" class="cert-logo">
-                        <h3>Python Introduction Course</h3>
-                        <p class="company-name">University of Michigan</p>
-                    </div>
-                    <div class="certification-item" data-certificate="https://www.coursera.org/account/accomplishments/records/DQFHS4YLLVE5">
-                        <span class="cert-number">7</span>
-                        <img src="/Images/LearnQuest.png" alt="University of Michigan Logo" class="cert-logo">
-                        <h3>Introduction to Java</h3>
-                        <p class="company-name">Learn Quest</p>
-                    </div>
-                </div>
-                <!-- <div class="cert-nav-controls">
-                    <button class="cert-nav-button" onclick="scrollCertifications('prev')">←</button>
-                    <button class="cert-nav-button" onclick="toggleCertificationScroll()">⏸</button>
-                    <button class="cert-nav-button" onclick="scrollCertifications('next')">→</button>
-                </div> -->
-            </div>
+            <ul class="cert-list">
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/VHNSGW9VL9VW" target="_blank" rel="noopener">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Introduction to Generative AI</span>
+                            <span class="cert-issuer">Google Cloud</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/6NS74ZTWMRFB" target="_blank" rel="noopener">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Introduction to Artificial Intelligence</span>
+                            <span class="cert-issuer">IBM</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/PPQLQGSH3GAU" target="_blank" rel="noopener">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Getting Started with AI using IBM Watson</span>
+                            <span class="cert-issuer">IBM</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/78TX5G24H6LM" target="_blank" rel="noopener">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Tools of Trade: Linux and SQL</span>
+                            <span class="cert-issuer">Google</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/VC7ZCH6XMTL7" target="_blank" rel="noopener">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Introduction to Databases</span>
+                            <span class="cert-issuer">Meta</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/GY7UFSTVLHYE" target="_blank" rel="noopener">
+                        <img src="Images/Michigan.jpeg" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Python Introduction Course</span>
+                            <span class="cert-issuer">University of Michigan</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="cert-row" href="https://www.coursera.org/account/accomplishments/records/DQFHS4YLLVE5" target="_blank" rel="noopener">
+                        <img src="Images/LearnQuest.png" alt="" class="cert-logo">
+                        <span class="cert-text">
+                            <span class="cert-title">Introduction to Java</span>
+                            <span class="cert-issuer">Learn Quest</span>
+                        </span>
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     
     <section id="education">
         <div class="wrapper">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <h2>Education</h2>
             
             <div class="education-item education-done" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="education-header">
@@ -545,13 +484,13 @@
                     <div class="education-title">
                         <h3>PES University</h3>
                         <h4 class="education-institution">Bangalore, India</h4>
-                        <p class="education-date"><i class="far fa-calendar-alt"></i> July 2022 - July 2026</p>
+                        <p class="education-date">July 2022 - July 2026</p>
                     </div>
                 </div>
                 <div class="education-details">
-                    <p class="education-degree"><i class="fas fa-book"></i> Bachelors of Science, Computer Science and Engineering (Senior)</p>
-                    <!-- <p class="education-gpa"><i class="fas fa-star"></i> CGPA: 8.76/10</p> -->
-                    <!-- <p class="education-achievements"><i class="fas fa-trophy"></i> Won 2 university-level hackathons</p> -->
+                    <p class="education-degree">Bachelors of Science, Computer Science and Engineering (Senior)</p>
+                    <!-- <p class="education-gpa">CGPA: 8.76/10</p> -->
+                    <!-- <p class="education-achievements">Won 2 university-level hackathons</p> -->
                 </div>
             </div>
             
@@ -561,12 +500,12 @@
                     <div class="education-title">
                         <h3>Narayana Jr. College</h3>
                         <h4 class="education-institution">Anantapur, India</h4>
-                        <p class="education-date"><i class="far fa-calendar-alt"></i> July 2020 - May 2022</p>
+                        <p class="education-date">July 2020 - May 2022</p>
                     </div>
                 </div>
                 <div class="education-details">
-                    <p class="education-degree"><i class="fas fa-atom"></i> Maths, Physics, Chemistry</p>
-                    <!-- <p class="education-percentage"><i class="fas fa-chart-line"></i> Percentage: 84.6%</p> -->
+                    <p class="education-degree">Maths, Physics, Chemistry</p>
+                    <!-- <p class="education-percentage">Percentage: 84.6%</p> -->
                 </div>
             </div>
             
@@ -576,68 +515,78 @@
                     <div class="education-title">
                         <h3>Vishwa Bharathi E.M. High School</h3>
                         <h4 class="education-institution">Anantapur, India</h4>
-                        <p class="education-date"><i class="far fa-calendar-alt"></i> July 2015 – May 2020</p>
+                        <p class="education-date">July 2015 – May 2020</p>
                     </div>
                 </div>
                 <div class="education-details">
-                    <p class="education-degree"><i class="fas fa-book"></i> High School</p>
-                    <!-- <p class="education-percentage"><i class="fas fa-chart-line"></i> Percentage: 98.67%</p> -->
-                </div>
-            </div>
-        </div>
-
-    <!-- Contact Section -->
-    <section id="contact">
-    	<div class="wrapper">
-            <h2><i class="fas fa-paper-plane"></i> Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info-section" data-aos="fade-up" data-aos-duration="800">
-                    <h3>Get in Touch</h3>
-                    <p>Feel free to reach out if you have any questions or would like to discuss potential collaboration opportunities. 👋</p>
-                    <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Bangalore, India 🇮🇳</p>
-                        </div>
-                        <div class="contact-detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>mudarpranav3@gmail.com</p>
-                        </div>
-                        <!-- <div class="contact-detail-item">
-                            <i class="fas fa-phone"></i>
-                            <p>(+91) 9959956470</p>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="contact-form-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="send-button">
-                            <span class="send-text">Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                        <div id="form-status" class="form-status"></div>
-                    </form>
+                    <p class="education-degree">High School</p>
+                    <!-- <p class="education-percentage">Percentage: 98.67%</p> -->
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="wrapper">
+            <div class="contact-panel">
+                <div class="contact-top">
+                    <div>
+                        <h2>Say hello</h2>
+                        <p class="contact-lead">Questions, ideas or opportunities. I read every message.</p>
+                        <div class="contact-email">
+                            <a href="mailto:mudarpranav3@gmail.com">mudarpranav3@gmail.com</a>
+                            <button type="button" class="contact-copy" data-copy="mudarpranav3@gmail.com" aria-label="Copy email address">
+                                <i class="far fa-copy" aria-hidden="true"></i><span>Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact-links">
+                        <p class="contact-links-title">Find me on</p>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/Pranav-Mudar/" target="_blank" rel="noopener">LinkedIn <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Mdr-Pranav" target="_blank" rel="noopener">GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+                            <li>Bengaluru, India</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="contact-name" aria-hidden="true">Pranav Mudar</p>
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.contact-copy').forEach((btn) => {
+                const label = btn.querySelector('span');
+                btn.addEventListener('click', () => {
+                    if (!navigator.clipboard) return;
+                    navigator.clipboard.writeText(btn.dataset.copy).then(() => {
+                        label.textContent = 'Copied';
+                        btn.classList.add('is-copied');
+                        setTimeout(() => { label.textContent = 'Copy'; btn.classList.remove('is-copied'); }, 1800);
+                    });
+                });
+            });
+        </script>
+    </section>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <p>&copy; <span data-year>2026</span> Pranav Mudar</p>
+        </div>
+        <script>
+            document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+        </script>
+    </footer>
+
     <!-- Profile Picture Modal -->
-    <div class="modal" id="profileModal">
-        <span class="modal-close">&times;</span>
-        <img src="/dp/Me2.jpg" alt="Pranav Mudar">
+    <div class="modal" id="profileModal" role="dialog" aria-modal="true" aria-label="Photo of Pranav Mudar" aria-hidden="true">
+        <figure class="modal-card">
+            <button type="button" class="modal-close" aria-label="Close photo"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+            <img src="dp/Me2.jpg" alt="Pranav Mudar">
+            <figcaption>
+                <span class="modal-name">Pranav Mudar</span>
+                <span class="modal-role">Member of Technical Staff at Everpure</span>
+            </figcaption>
+        </figure>
     </div>
 
     <script>
@@ -678,33 +627,28 @@
             if (!modal) {
                 return;
             }
-            
-            // Ensure modal is a direct child of body (move it if needed)
+
+            // Keep the modal a direct child of body so no ancestor transform traps it
             if (modal.parentElement !== document.body) {
                 document.body.appendChild(modal);
             }
-            
-            // Remove any inline styles that might conflict
-            modal.removeAttribute('style');
-            
-            // Add active class - CSS will handle the rest
+
             modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
             document.body.classList.add('modal-open');
-            
-            // Force a reflow to ensure styles apply
-            void modal.offsetHeight;
-            
-            document.body.style.overflow = 'hidden';
+            modalClose.focus({ preventScroll: true });
         }
 
         function closeModal() {
+            if (!modal.classList.contains('active')) {
+                return;
+            }
             modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
             document.body.classList.remove('modal-open');
-            modal.style.opacity = '0';
-            setTimeout(() => {
-                modal.removeAttribute('style');
-                document.body.style.overflow = '';
-            }, 300);
+            if (aboutAvatar) {
+                aboutAvatar.focus({ preventScroll: true });
+            }
         }
 
         if (aboutAvatar) {
@@ -712,6 +656,12 @@
                 e.preventDefault();
                 e.stopPropagation();
                 openModal();
+            });
+            aboutAvatar.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openModal();
+                }
             });
         }
 
@@ -726,6 +676,11 @@
         if (modal) {
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
                     closeModal();
                 }
             });
@@ -802,193 +757,8 @@
             });
         });
         
-        // Contact Form EmailJS
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            const formStatus = document.getElementById('form-status');
-            formStatus.textContent = 'Sending...';
-            
-            // Create template parameters based on EmailJS template variables
-            const templateParams = {
-                from_name: document.getElementById('name').value,
-                to_name: "Pranav",
-                reply_to: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value,
-                sender_email: document.getElementById('email').value,
-                date: new Date().toLocaleString() // Add current date and time
-            };
-            
-            // Make sure your service_id and template_id match exactly what's in your EmailJS dashboard
-            emailjs.send('service_xma4dei', 'template_a5rfl33', templateParams)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    formStatus.textContent = 'Message sent successfully!';
-                    formStatus.className = 'form-status success';
-                    document.getElementById('contact-form').reset();
-                    setTimeout(() => {
-                        formStatus.textContent = '';
-                        formStatus.className = 'form-status';
-                    }, 5000);
-                })
-                .catch(function(error) {
-                    console.log('FAILED...', error);
-                    formStatus.textContent = 'Failed to send message. Please try again.';
-                    formStatus.className = 'form-status error';
-                    
-                    // If there was an error, let's log more details
-                    console.log('Error details:', {
-                        service_id: 'service_xma4dei',
-                        template_id: 'template_a5rfl33',
-                        user_id: 'TtQe7-Jcwfae3lQhK',
-                        error: error
-                    });
-            });
-        });
 
-        // Certifications scroll control
-        let isPaused = false;
-        let autoScrollInterval;
-        let currentPosition = 0;
-        const scrollContainer = document.querySelector('.certifications-scroll');
-        const pauseButton = document.querySelector('.cert-nav-button:nth-child(2)');
-        const itemWidth = window.innerWidth < 768 ? 200 : 300;
-        
-        function setupInfiniteScroll() {
-            const certificates = document.querySelectorAll('.certification-item');
-            const container = document.querySelector('.certifications-scroll');
-            container.innerHTML = '';
-            
-            certificates.forEach(cert => container.appendChild(cert.cloneNode(true)));
-            certificates.forEach(cert => container.appendChild(cert.cloneNode(true)));
-            
-            if (!isPaused) startAutoScroll();
-        }
-        
-        function startAutoScroll() {
-            if (autoScrollInterval) clearInterval(autoScrollInterval);
-            autoScrollInterval = setInterval(() => {
-                if (!isPaused) {
-                    currentPosition -= 1;
-                    const totalWidth = itemWidth * document.querySelectorAll('.certification-item').length / 2;
-                    if (Math.abs(currentPosition) >= totalWidth) currentPosition = 0;
-                    scrollContainer.style.transform = `translateX(${currentPosition}px)`;
-                }
-            }, 20);
-        }
-        
-        function stopAutoScroll() {
-            if (autoScrollInterval) {
-                clearInterval(autoScrollInterval);
-                autoScrollInterval = null;
-            }
-        }
-        
-        function toggleCertificationScroll() {
-            isPaused = !isPaused;
-            pauseButton.textContent = isPaused ? '▶' : '⏸';
-            if (isPaused) stopAutoScroll();
-            else startAutoScroll();
-        }
-        
-        function scrollCertifications(direction) {
-            const step = direction === 'next' ? -itemWidth : itemWidth;
-            currentPosition += step;
-            const totalWidth = itemWidth * document.querySelectorAll('.certification-item').length / 2;
-            if (Math.abs(currentPosition) >= totalWidth) currentPosition = 0;
-            scrollContainer.style.transform = `translateX(${currentPosition}px)`;
-        }
-        
-        let touchStartX = 0;
-        let isDragging = false;
-        
-        scrollContainer.addEventListener('touchstart', (e) => {
-            touchStartX = e.touches[0].clientX;
-            isDragging = true;
-            stopAutoScroll();
-        });
-        
-        scrollContainer.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-            const diffX = touchStartX - e.touches[0].clientX;
-            currentPosition -= diffX;
-            const totalWidth = itemWidth * document.querySelectorAll('.certification-item').length / 2;
-            if (Math.abs(currentPosition) >= totalWidth) currentPosition = 0;
-            scrollContainer.style.transform = `translateX(${currentPosition}px)`;
-            touchStartX = e.touches[0].clientX;
-        });
-        
-        scrollContainer.addEventListener('touchend', () => {
-            isDragging = false;
-            if (!isPaused) startAutoScroll();
-        });
-        
-        setupInfiniteScroll();
-        
-        window.addEventListener('resize', setupInfiniteScroll);
-        
-        window.addEventListener('beforeunload', () => {
-            stopAutoScroll();
-            scrollContainer.removeEventListener('touchstart', null);
-            scrollContainer.removeEventListener('touchmove', null);
-            scrollContainer.removeEventListener('touchend', null);
-            window.removeEventListener('resize', null);
-        });
 
-        // Make certification items clickable
-        document.querySelectorAll('.certification-item').forEach(item => {
-            item.addEventListener('click', (e) => {
-                // Don't trigger if clicking on the navigation buttons
-                if (!e.target.closest('.cert-nav-button')) {
-                    const certificateUrl = item.getAttribute('data-certificate');
-                    if (certificateUrl) {
-                        window.open(certificateUrl, '_blank');
-                    }
-                }
-            });
-        });
-
-        // Page Load Animation Controller
-        (function() {
-            const loader = document.getElementById('pageLoader');
-            const body = document.body;
-            
-            // Animation timing - curtain starts at 1.2s, so we trigger loaded state then
-            // This allows name/image animations to complete before curtain fully opens
-            const curtainStartDelay = 1200;
-            const curtainDuration = 800;
-            const totalAnimationDuration = curtainStartDelay + curtainDuration;
-            
-            // When DOM is ready, start the reveal
-            function startReveal() {
-                // Small delay to ensure styles are applied
-                requestAnimationFrame(() => {
-                    // Trigger loaded state when curtain starts opening
-                    setTimeout(() => {
-                        body.classList.remove('loading');
-                        body.classList.add('loaded');
-                        
-                        // Clean up loader after curtain animation completes
-                        setTimeout(() => {
-                            loader.classList.add('hidden');
-                            // Remove loader from DOM after transition
-                            setTimeout(() => {
-                                loader.remove();
-                            }, 100);
-                        }, curtainDuration);
-                    }, curtainStartDelay);
-                });
-            }
-            
-            // Start immediately if DOM already loaded
-            if (document.readyState === 'complete') {
-                startReveal();
-            } else {
-                window.addEventListener('load', startReveal);
-            }
-        })();
     </script>
 </body>
 </html>

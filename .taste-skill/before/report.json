@@ -1,0 +1,2311 @@
+{
+ "url": "index.html",
+ "at": "2026-10-26T12:26:43.355Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.98,
+    0.7,
+    0.46,
+    0.61,
+    0.44,
+    0.46,
+    0.46,
+    0.51,
+    0.5
+   ],
+   "motion": {
+    "elements": 97,
+    "css": 85,
+    "transitions": 11,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7302,
+     "screens": 8.1,
+     "words": 634,
+     "img": 31,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "Me2.jpg",
+      "GenAI1.jpeg",
+      "backgroundmusic1.jpg",
+      "ultimate1.jpg",
+      "Finance_Manager.jpg",
+      "elearning1.jpg",
+      "StudentTools1.jpg",
+      "DisasterManagement1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "👋"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "PRANAV MUDAR",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 80,
+     "vw": 5.6,
+     "font": "Montserrat",
+     "weight": 800,
+     "tracking": 0.025,
+     "leading": 1.1,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.56,
+     "top": 242,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Pranav",
+     "words": 1,
+     "lines": 1,
+     "size": 25.6,
+     "font": "Montserrat"
+    },
+    "headings": [
+     {
+      "text": "Hi, I'm",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Roboto",
+      "weight": 400,
+      "tracking": 0.031,
+      "leading": 1.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.56,
+      "top": 176,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "PRANAV MUDAR",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "Montserrat",
+      "weight": 800,
+      "tracking": 0.025,
+      "leading": 1.1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.56,
+      "top": 242,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Roboto",
+       "share": 0.73,
+       "mono": false
+      },
+      {
+       "family": "Montserrat",
+       "share": 0.27,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      24,
+      26,
+      32,
+      80
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Roboto",
+      "size": 14.8,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.8
+     },
+     "measureChars": 91,
+     "max": {
+      "size": 80,
+      "vw": 5.6,
+      "font": "Montserrat",
+      "text": "PRANAV MUDAR"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.004,
+     "microSamples": [
+      "Completed",
+      "Completed"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.49,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#070b1a",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 0.58,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0a0a0a",
+       "top": 80,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e0e0e0",
+       "share": 0.75
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.19
+      },
+      {
+       "color": "#4fc3f7",
+       "share": 0.03
+      },
+      {
+       "color": "#00e676",
+       "share": 0.02
+      },
+      {
+       "color": "#3b82f6",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#4fd1c5",
+      "hsl": {
+       "h": 174,
+       "s": 0.59,
+       "l": 0.56
+      },
+      "fg": "#000000"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 44,
+     "withShadow": 1,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pranav"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 49,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.about-image → rgba(52, 152, 219, 0.7) 0px 0px 20px 0px",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p"
+     ],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-grid → linear-gradient(rgba(52, 152, 219, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(52, 152, 219,",
+      "div.hero-glow → radial-gradient(circle, rgba(52, 152, 219, 0.08) 0%, rgba(0, 0, 0, 0) 70%)"
+     ],
+     "gradientText": 2,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 34,
+     "dashed": 0,
+     "blurred": 50,
+     "roundedBoxes": 35,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 10,
+     "mediaRadius": 16,
+     "textShadow": 6,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1518
+      },
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2638
+      },
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 4420
+      },
+      {
+       "count": 14,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5050
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5723
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.91
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "montserrat",
+     "roboto",
+     "font awesome 6 brands",
+     "font awesome 6 free",
+     "font awesome 5 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7302,
+    "margins": {
+     "left": 162,
+     "right": 162
+    },
+    "sections": [
+     {
+      "sel": "section#hero.about-section",
+      "tag": "section",
+      "top": 80,
+      "height": 1185,
+      "words": 118,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "PRANAV MUDAR",
+       "size": 80,
+       "tag": "h1"
+      },
+      "left": 323,
+      "right": 323,
+      "textLeft": 323,
+      "textRight": 323,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 1265,
+      "height": 1161,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 153,
+      "right": 153,
+      "textLeft": 267,
+      "textRight": 183,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work",
+      "tag": "section",
+      "top": 2426,
+      "height": 1740,
+      "words": 106,
+      "media": 9,
+      "middle": 51,
+      "heading": {
+       "text": "Featured Projects",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 162,
+      "right": 162,
+      "textLeft": 184,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills",
+      "tag": "section",
+      "top": 4167,
+      "height": 681,
+      "words": 44,
+      "media": 0,
+      "middle": 160,
+      "heading": {
+       "text": "Technical Skills",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 185,
+      "right": 189,
+      "textLeft": 185,
+      "textRight": 189,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certifications",
+      "tag": "section",
+      "top": 4847,
+      "height": 632,
+      "words": 83,
+      "media": 0,
+      "middle": 3259,
+      "heading": {
+       "text": "Certifications",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": -106,
+      "textRight": -3415,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrapper",
+      "tag": "div",
+      "top": 5544,
+      "height": 865,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Education",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 185,
+      "right": 639,
+      "textLeft": 199,
+      "textRight": 639,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact",
+      "tag": "section",
+      "top": 6409,
+      "height": 830,
+      "words": 33,
+      "media": 0,
+      "middle": 12,
+      "heading": {
+       "text": "Contact Me",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 201,
+      "right": 185,
+      "textLeft": 201,
+      "textRight": 525,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Pranav",
+      "size": 26,
+      "top": 26,
+      "firstScreen": true
+     },
+     {
+      "text": "PRANAV MUDAR",
+      "size": 80,
+      "top": 242,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 267,
+      "n": 4
+     },
+     {
+      "x": 199,
+      "n": 3
+     },
+     {
+      "x": 299,
+      "n": 3
+     },
+     {
+      "x": 185,
+      "n": 2
+     },
+     {
+      "x": 574,
+      "n": 1
+     },
+     {
+      "x": 988,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 14,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    1,
+    0.71,
+    0.69,
+    0.81,
+    0.86,
+    0.81,
+    0.7,
+    0.57,
+    0.68,
+    0.67,
+    0.61
+   ],
+   "motion": {
+    "elements": 97,
+    "css": 86,
+    "transitions": 11,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 10293,
+     "screens": 10.1,
+     "words": 634,
+     "img": 31,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "Me2.jpg",
+      "GenAI1.jpeg",
+      "backgroundmusic1.jpg",
+      "ultimate1.jpg",
+      "Finance_Manager.jpg",
+      "elearning1.jpg",
+      "StudentTools1.jpg",
+      "DisasterManagement1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "👋"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "PRANAV MUDAR",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 80,
+     "vw": 10.4,
+     "font": "Montserrat",
+     "weight": 800,
+     "tracking": 0.025,
+     "leading": 1.1,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 304,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Pranav",
+     "words": 1,
+     "lines": 1,
+     "size": 25.6,
+     "font": "Montserrat"
+    },
+    "headings": [
+     {
+      "text": "Hi, I'm",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Roboto",
+      "weight": 400,
+      "tracking": 0.031,
+      "leading": 1.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 238,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "PRANAV MUDAR",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 80,
+      "vw": 10.4,
+      "font": "Montserrat",
+      "weight": 800,
+      "tracking": 0.025,
+      "leading": 1.1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 304,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Roboto",
+       "share": 0.73,
+       "mono": false
+      },
+      {
+       "family": "Montserrat",
+       "share": 0.27,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24,
+      26,
+      32,
+      80
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Roboto",
+      "size": 14.8,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.8
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 80,
+      "vw": 10.4,
+      "font": "Montserrat",
+      "text": "PRANAV MUDAR"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.004,
+     "microSamples": [
+      "Completed",
+      "Completed"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.55,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#070b1a",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 0.58,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0a0a0a",
+       "top": 126,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e0e0e0",
+       "share": 0.75
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.19
+      },
+      {
+       "color": "#4fc3f7",
+       "share": 0.03
+      },
+      {
+       "color": "#00e676",
+       "share": 0.02
+      },
+      {
+       "color": "#3b82f6",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#4fd1c5",
+      "hsl": {
+       "h": 174,
+       "s": 0.59,
+       "l": 0.56
+      },
+      "fg": "#000000"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 44,
+     "withShadow": 1,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pranav"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 49,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.about-image → rgba(52, 152, 219, 0.7) 0px 0px 20px 0px",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p"
+     ],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-grid → linear-gradient(rgba(52, 152, 219, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(52, 152, 219,",
+      "div.hero-glow → radial-gradient(circle, rgba(52, 152, 219, 0.08) 0%, rgba(0, 0, 0, 0) 70%)"
+     ],
+     "gradientText": 2,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 35,
+     "dashed": 0,
+     "blurred": 50,
+     "roundedBoxes": 36,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 10,
+     "mediaRadius": 16,
+     "textShadow": 6,
+     "cardRows": [
+      {
+       "count": 14,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 7904
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.88
+     },
+     {
+      "type": "img",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 126,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "montserrat",
+     "roboto",
+     "font awesome 6 brands",
+     "font awesome 6 free",
+     "font awesome 5 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 10293,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "header",
+      "tag": "header",
+      "top": 0,
+      "height": 126,
+      "words": 5,
+      "media": 0,
+      "middle": 125,
+      "heading": {
+       "text": "Pranav",
+       "size": 26,
+       "tag": "h1"
+      },
+      "left": 25,
+      "right": 237,
+      "textLeft": 25,
+      "textRight": 237,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#hero.about-section",
+      "tag": "section",
+      "top": 126,
+      "height": 1335,
+      "words": 118,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "PRANAV MUDAR",
+       "size": 80,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 1461,
+      "height": 1132,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 139,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work",
+      "tag": "section",
+      "top": 2593,
+      "height": 3867,
+      "words": 106,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Featured Projects",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 92,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills",
+      "tag": "section",
+      "top": 6460,
+      "height": 1242,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technical Skills",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 89,
+      "right": 273,
+      "textLeft": 89,
+      "textRight": 273,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certifications",
+      "tag": "section",
+      "top": 7702,
+      "height": 571,
+      "words": 83,
+      "media": 0,
+      "middle": 2507,
+      "heading": {
+       "text": "Certifications",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": -215,
+      "textRight": -2620,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrapper",
+      "tag": "div",
+      "top": 8337,
+      "height": 1063,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Education",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 156,
+      "right": 142,
+      "textLeft": 156,
+      "textRight": 142,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact",
+      "tag": "section",
+      "top": 9400,
+      "height": 830,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Contact Me",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 81,
+      "right": 65,
+      "textLeft": 81,
+      "textRight": 189,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Pranav",
+      "size": 26,
+      "top": 25,
+      "firstScreen": true
+     },
+     {
+      "text": "PRANAV MUDAR",
+      "size": 80,
+      "top": 304,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Introduction to Artificial Intelligence",
+      "side": "left",
+      "px": 14
+     }
+    ],
+    "edges": [
+     {
+      "x": 81,
+      "n": 4
+     },
+     {
+      "x": 139,
+      "n": 4
+     },
+     {
+      "x": 25,
+      "n": 1
+     },
+     {
+      "x": 95,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.99,
+    1,
+    0.73,
+    0.72,
+    0.68,
+    0.73,
+    0.68,
+    0.73,
+    0.48,
+    0.78,
+    0.33,
+    0.73
+   ],
+   "motion": {
+    "elements": 95,
+    "css": 86,
+    "transitions": 9,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 11684,
+     "screens": 13.8,
+     "words": 730,
+     "img": 45,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "Me2.jpg",
+      "GenAI1.jpeg",
+      "backgroundmusic1.jpg",
+      "ultimate1.jpg",
+      "Finance_Manager.jpg",
+      "elearning1.jpg",
+      "StudentTools1.jpg",
+      "DisasterManagement1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "👋"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "PRANAV MUDAR",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 80,
+     "vw": 20.5,
+     "font": "Montserrat",
+     "weight": 800,
+     "tracking": 0.025,
+     "leading": 1.1,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 204,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Pranav",
+     "words": 1,
+     "lines": 1,
+     "size": 25.6,
+     "font": "Montserrat"
+    },
+    "headings": [
+     {
+      "text": "Pranav",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 25,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Hi, I'm",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Roboto",
+      "weight": 400,
+      "tracking": 0.031,
+      "leading": 1.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 138,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "PRANAV MUDAR",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 80,
+      "vw": 20.5,
+      "font": "Montserrat",
+      "weight": 800,
+      "tracking": 0.025,
+      "leading": 1.1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 204,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Computer Science student at PES University",
+      "words": 6,
+      "chars": 42,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Roboto",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 744,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Experience",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 1767,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Featured Projects",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 3059,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technical Skills",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 7371,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Programming Languages",
+      "words": 2,
+      "chars": 21,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.67,
+      "top": 7559,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Machine Learning Libraries",
+      "words": 3,
+      "chars": 26,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.67,
+      "top": 7936,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Developer Tools",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 8350,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Certifications",
+      "words": 1,
+      "chars": 14,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 8767,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Education",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 9319,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Contact Me",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 10445,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get in Touch",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Montserrat",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 10676,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 9,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Roboto",
+       "share": 0.67,
+       "mono": false
+      },
+      {
+       "family": "Montserrat",
+       "share": 0.33,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24,
+      26,
+      32,
+      80
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Roboto",
+      "size": 14.8,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.8
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 80,
+      "vw": 20.5,
+      "font": "Montserrat",
+      "text": "PRANAV MUDAR"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.004,
+     "microSamples": [
+      "Completed",
+      "Completed"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.6,
+     "smallText": 8
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#070b1a",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 0.58,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0a0a0a",
+       "top": 126,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e0e0e0",
+       "share": 0.75
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.18
+      },
+      {
+       "color": "#4fc3f7",
+       "share": 0.05
+      },
+      {
+       "color": "#00e676",
+       "share": 0.02
+      },
+      {
+       "color": "#3b82f6",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#4fd1c5",
+      "hsl": {
+       "h": 174,
+       "s": 0.59,
+       "l": 0.56
+      },
+      "fg": "#000000"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 44,
+     "withShadow": 1,
+     "withGradient": 2,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pranav"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 63,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.about-image → rgba(52, 152, 219, 0.7) 0px 0px 20px 0px",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+      "a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p"
+     ],
+     "gradients": 3,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-grid → linear-gradient(rgba(52, 152, 219, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(52, 152, 219,",
+      "div.hero-glow → radial-gradient(circle, rgba(52, 152, 219, 0.08) 0%, rgba(0, 0, 0, 0) 70%)",
+      "button.send-button → linear-gradient(rgb(59, 130, 246), rgb(37, 99, 235))"
+     ],
+     "gradientText": 2,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 49,
+     "dashed": 0,
+     "blurred": 64,
+     "roundedBoxes": 50,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 10,
+     "mediaRadius": 16,
+     "textShadow": 6,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1922
+      },
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 3174
+      },
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 7526
+      },
+      {
+       "count": 28,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 8873
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 9472
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.85
+     },
+     {
+      "type": "img",
+      "ratio": 0.27
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 126,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "montserrat",
+     "roboto",
+     "font awesome 6 brands",
+     "font awesome 6 free",
+     "font awesome 5 free"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 11684,
+    "margins": {
+     "left": 19,
+     "right": 19
+    },
+    "sections": [
+     {
+      "sel": "header",
+      "tag": "header",
+      "top": 0,
+      "height": 126,
+      "words": 5,
+      "media": 0,
+      "middle": 18,
+      "heading": {
+       "text": "Pranav",
+       "size": 26,
+       "tag": "h1"
+      },
+      "left": 25,
+      "right": 48,
+      "textLeft": 25,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "div.hero-grid",
+      "tag": "div",
+      "top": 111,
+      "height": 1545,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.hero-glow",
+      "tag": "div",
+      "top": -265,
+      "height": 2327,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrapper.hero-wrapper",
+      "tag": "div",
+      "top": 126,
+      "height": 1545,
+      "words": 118,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "PRANAV MUDAR",
+       "size": 80,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 2,
+      "textLeft": 16,
+      "textRight": 2,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience",
+      "tag": "section",
+      "top": 1671,
+      "height": 1293,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 84,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work",
+      "tag": "section",
+      "top": 2963,
+      "height": 4312,
+      "words": 106,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Featured Projects",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 49,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills",
+      "tag": "section",
+      "top": 7275,
+      "height": 1396,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technical Skills",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 65,
+      "right": 72,
+      "textLeft": 65,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certifications",
+      "tag": "section",
+      "top": 8671,
+      "height": 552,
+      "words": 165,
+      "media": 0,
+      "middle": 4794,
+      "heading": {
+       "text": "Certifications",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": -463,
+      "textRight": -4894,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrapper",
+      "tag": "div",
+      "top": 9287,
+      "height": 1062,
+      "words": 32,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Education",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 78,
+      "right": 72,
+      "textLeft": 78,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact",
+      "tag": "section",
+      "top": 10349,
+      "height": 1271,
+      "words": 2,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Contact Me",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 133,
+      "right": 109,
+      "textLeft": 133,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Pranav",
+      "size": 26,
+      "top": 25,
+      "firstScreen": true
+     },
+     {
+      "text": "PRANAV MUDAR",
+      "size": 80,
+      "top": 204,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 139,
+      "n": 4
+     },
+     {
+      "x": 65,
+      "n": 2
+     },
+     {
+      "x": 25,
+      "n": 1
+     },
+     {
+      "x": 89,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "2 tiny uppercase letter-spaced label(s): \"Completed\", \"Completed\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: 👋",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "2 gradient fill(s): div.hero-grid → linear-gradient(rgba(52, 152, 219, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(52, 152, 219, | div.hero-glow → radial-gradient(circle, rgba(52, 152, 219, 0.08) 0%, rgba(0, 0, 0, 0) 70%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient-text",
+   "width": 1440,
+   "message": "2 gradient-filled text element(s).",
+   "fix": "Solid colour text.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "49 box-shadow(s) on elements at rest: div.about-image → rgba(52, 152, 219, 0.7) 0px 0px 20px 0px | a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p | a.social-link → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(30, 64, 175, 0.28) 0px 10p",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "text-shadow",
+   "width": 1440,
+   "message": "6 text-shadow(s).",
+   "fix": "Remove; fix legibility with a scrim or a different crop.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with gradient fill and shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "34 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "50 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "2 row(s) of identical cards each topped with a small icon (9, 3 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 26, 32, 80).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14.8px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 91 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (it is at 0% opacity).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "A section keeps its content on one side and leaves 639px of the width empty: \"Education\".",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 3259px of nothing between: \"Certifications\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 1440,
+   "message": "The h1 is 26px (\"Pranav\").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "many-h1",
+   "width": 1440,
+   "message": "2 h1 elements.",
+   "fix": "One h1 per page; section titles are h2.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 768,
+   "message": "1 text block(s) sit within 16px of the screen edge: \"Introduction to Artificial Int\" (14px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 390,
+   "message": "8 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/desktop-page-02.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/tablet-page-01.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/mobile-page-01.jpg",
+    "/Users/m_pnv/_.Me._/Projects/Git_projects/Pranav_Mudar_Portfolio/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     
     <!--/ /-------- Google Fonts --------/ /-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!--/ /-------- Font Awesome --------/ /-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -28,7 +28,7 @@
     <header>
         <div class="wrapper">
             <div class="logo-container">
-                <h1><a href="../index.html#top">Pranav</a></h1>
+                <a class="wordmark" href="../index.html#top">Pranav</a>
             </div>
             
             <nav id="mainnav">
@@ -149,6 +149,15 @@
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <p>&copy; <span data-year>2026</span> Pranav Mudar</p>
+        </div>
+        <script>
+            document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+        </script>
+    </footer>
 
     <!-- Profile Picture Modal -->
     <div class="modal" id="profileModal">
