@@ -3349,22 +3349,6 @@ a:hover {
     }
 }
 
-/* Checkmark draw animation on hover */
-.experience-completed:hover .checkmark-circle {
-    animation: checkSpin 0.6s ease-out;
-}
-
-@keyframes checkSpin {
-    0% {
-        transform: rotate(0deg) scale(1);
-    }
-    50% {
-        transform: rotate(180deg) scale(1.2);
-    }
-    100% {
-        transform: rotate(360deg) scale(1);
-    }
-}
 
 .completed-badge .badge-text {
     color: #00e676;
@@ -4982,7 +4966,7 @@ body.loaded .about-image {
 
 @keyframes avatarPop {
     0% {
-        transform: scale(0) rotate(-10deg);
+        transform: scale(0);
         opacity: 0;
     }
     100% {
@@ -5668,11 +5652,31 @@ h2:after,
 }
 
 /* Experience: quiet badges, no pulsing glow */
-.experience-completed,
 .experience-in-progress,
 .education-done,
 .education-ongoing {
     animation: none !important;
+}
+
+/* Completed experience: green version of the blue pulsateGlow */
+@keyframes pulsateGlowGreen {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 200, 83, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 200, 83, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 200, 83, 0.4);
+    }
+}
+
+.experience-completed {
+    animation: pulsateGlowGreen 3s infinite;
+}
+
+.experience-completed:hover {
+    animation: pulsateGlowGreen 1.5s infinite;
 }
 
 .experience-completed::before {
@@ -6520,7 +6524,6 @@ Overrides the older !important modal rules near the top of the file.
 #profileModal.modal .modal-close:hover {
     background: rgba(37, 99, 235, 0.55);
     color: #fff !important;
-    transform: rotate(90deg);
 }
 
 #profileModal .modal-close:focus-visible {
